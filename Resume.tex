@@ -11,7 +11,7 @@
 % (http://www.rpi.edu/dept/arc/training/latex/resumes/)
 %
 % Modified by:
-% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+% Sebastien Blanchet <s3blanch@edu.uwaterloo> 04/28/2018
 %
 % Important note:
 % This template requires the res.cls file to be in the same directory as the
@@ -59,6 +59,9 @@
 \textheight=700pt
 \textwidth=446pt
 
+% Spacing in between jobs and projects
+\parskip=5pt
+
 % Custom commands
 \newcommand{\tb}{\textbullet \xspace}
 \newcommand{\toprule}{
@@ -69,7 +72,6 @@
 }
 
 \newcommand{\npspctoprule}{
-\vspace{5pt}
 \nointerlineskip	% so I have this code
 \moveleft\hoffset\vbox{\hrule width 540pt height 0.5pt}
 \nointerlineskip
@@ -82,6 +84,9 @@
 %-------------------------------------------------------------------------------
 \name{SEBASTIEN BLANCHET}
 
+\fontsize{9pt}{10pt}\selectfont
+
+%\address{Waterloo, ON, CAN}
 \address{Cupertino, CA, USA}
 \address{(669)-241-8438}
 \address{s3blanch@edu.uwaterloo.ca}
@@ -119,8 +124,9 @@
 
 \employer{\textbf{University of Waterloo}}
 \location{\textbf{Waterloo, ON, CAN}}
-\title{Candidate for B.ASc. Honours Mechanical Engineering: \textit{3.3/4.0 GPA}}
-\dates{\textit{Sept. 2013 - Present}}
+\title{Candidate for B.ASc. \\
+Honours Mechanical Engineering: \textsl{3.3/4.0 GPA}}
+\dates{\textsl{Sept. 2013 - Present}}
 \begin{position}
 \end{position}
 
@@ -141,8 +147,8 @@
 %Apple
 \employer{\textbf{Apple Inc.}}
 \location{\textbf{Cupertino, CA, USA}}
-\title{\textit{Controls Engineering: Special Projects Group (SPG)}}
-\dates{\textit{Aug. 2017 - Present}}
+\title{\textsl{Controls Engineering: Special Projects Group (SPG)}}
+\dates{\textsl{Aug. 2017 - Present}}
 \begin{position}
 \tb PosX
 \end{position}
@@ -150,8 +156,8 @@
 %Altaeros
 \employer{\textbf{Altaeros Energies}}
 \location{\textbf{Boston, MA, USA}}
-\title{\textit{Systems Engineering}}
-\dates{\textit{Jan. - Apr. 2017}}
+\title{\textsl{Systems Engineering}}
+\dates{\textsl{Jan. - Apr. 2017}}
 \begin{position}
 \tb Performed FEA in ANSYS and PYTHON on prototype of world’s first commercial autonomous aerostat \\
 \tb Coordinated with vendors and ControlEng SERVOsoft to size all control system components (servos, drives) \\
@@ -161,8 +167,8 @@
 %ODI
 \employer{\textbf{Ontario Die International Inc.}}
 \location{\textbf{Kitchener, ON, CAN}}
-\title{\textit{Research \& Development}}
-\dates{\textit{May - Aug. 2016}}
+\title{\textsl{Research \& Development}}
+\dates{\textsl{May - Aug. 2016}}
 \begin{position}
 \tb Designed robotic components (electrical, pneumatic, hydraulic) of PLC/CNC bending systems in SOLIDWORKS \\
 \tb Automated tedious SOLIDWORKS tasks with the API SDK in VBA and C++ in MS Visual Studio IDEs \\
@@ -172,8 +178,8 @@
 %PWC
 \employer{\textbf{Pratt \& Whitney Canada}}
 \location{\textbf{Mississauga, ON, CAN}}
-\title{\textit{Operations Program Management Analyst}}
-\dates{\textit{Sept. - Dec. 2015}}
+\title{\textsl{Operations Program Management Analyst}}
+\dates{\textsl{Sept. - Dec. 2015}}
 \begin{position}
 \tb Assured on time OEM delivery of a quality turbofan engine while meeting their expectations and needs \\
 \tb Developed Excel VBA programs allowing for improvements in methods of business metric preparation
@@ -182,8 +188,8 @@
 %Skyjack
 \employer{\textbf{Skyjack Inc.}}
 \location{\textbf{Guelph, ON, CAN}}
-\title{\textit{Manufacturing Engineering}}
-\dates{\textit{Jan. - Apr. 2015}}
+\title{\textsl{Manufacturing Engineering}}
+\dates{\textsl{Jan. - Apr. 2015}}
 \begin{position}
 \tb Worked with a team of engineers to troubleshoot production issues at an aerial work platform manufacturer
 \end{position}
@@ -197,30 +203,41 @@
 \section{PROJECTS \xspace}
 % Modify layout
 \begin{format}
-\title{l}\dates{r}\\
+\title{l}\employer{l}\dates{r}\\
 \body\\
 \end{format}
 
 % Ball and Beam
-\title{\textbf{Ball and Beam System Laboratory,} ECE 481: Digital Control Systems}
-\dates{\textit{Aug 2017}}
+\title{\textbf{Ball \& Beam Lab}}
+\employer{ECE481: Digital Control Systems}
+\dates{\textsl{Aug 2017}}
 \begin{position}
 \tb Designed LabVIEW HMI, performed system ID, implemented/tuned digital controller on NI cRIO FPGA
 \end{position}
 
 % Drumming Hack
-\title{\textbf{Drumming Rhythm Arduino Hack,} Personal: Wentworth Institute of Technology Hackathon}
-\dates{\textit{Mar. 2017}}
+\title{\textbf{Drum Rhythm Arduino Hack}}
+\employer{Personal: WIT Hackathon}
+\dates{\textsl{Mar. 2017}}
 \begin{position}
 \tb Utilized the IDE and serial COM with MATLAB to develop real-time monitoring of drumming pattern
 \end{position}
 
-% Desc
-\title{\textbf{Model-Based Design of Wind Turbine Pitch Actuation,} ME 360: Control Systems}
-\dates{\textit{Dec. 2016}}
+% Wind turbine
+\title{\textbf{Wind Turbine Pitch Actuation}}
+\employer{ME360: Control Systems}
+\dates{\textsl{Dec. 2016}}
 \begin{position}
 \tb Studied time/frequency domain responses to assure closed loop stability of PI Simulink model in MATLAB
 \end{position}
+
+\title{\textbf{Mining Safety Device}}
+\employer{ME380: Engineering Design}
+\dates{\textsl{Nov. 2016}}
+\begin{position}
+\tb Developed a 3D printed enclosure to protect internal Arduino and sensors of severe underground environment, \textbf{design and test}
+\end{position}
+
 %-------------------------------------------------------------------------------
 
 \toprule
@@ -234,3 +251,7 @@
 
 \end{resume}
 \end{document}
+
+
+%% TODO
+% Make Title column wider
