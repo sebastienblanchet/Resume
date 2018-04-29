@@ -50,18 +50,30 @@
 \usepackage{xspace}
 \usepackage{geometry}
  \geometry{
- a4paper,
- total={170mm,257mm},
- left=10mm,
- top=10mm
+ letterpaper,
+ left=0.5in,
+ top=0.5in
 }
 
 % Increase text height
 \textheight=700pt
+\textwidth=446pt
 
 % Custom commands
 \newcommand{\tb}{\textbullet \xspace}
-\newcommand{\toprule}{\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.25pt}}}
+\newcommand{\toprule}{
+\vspace{5pt}
+\nointerlineskip	% so I have this code
+\moveleft\hoffset\vbox{\hrule width 540pt height 0.5pt}
+\nointerlineskip
+}
+
+\newcommand{\npspctoprule}{
+\vspace{5pt}
+\nointerlineskip	% so I have this code
+\moveleft\hoffset\vbox{\hrule width 540pt height 0.5pt}
+\nointerlineskip
+}
 
 \begin{document}
 
@@ -70,16 +82,9 @@
 %-------------------------------------------------------------------------------
 \name{SEBASTIEN BLANCHET}
 
-\fontsize{8pt}{10pt}\selectfont
-
-% Note that addresses can be used for other contact information:
-% -phone numbers
-% -email addresses
-% -linked-in profile
-
 \address{Cupertino, CA, USA}
-\address{s3blanch@edu.uwaterloo.ca}
 \address{(669)-241-8438}
+\address{s3blanch@edu.uwaterloo.ca}
 
 %-------------------------------------------------------------------------------
 
@@ -88,7 +93,8 @@
 %-------------------------------------------------------------------------------
 %	SKILLS
 %-------------------------------------------------------------------------------
-%\toprule
+
+\npspctoprule
 
 \section{SKILLS \xspace}
 􏰚\tb Advanced embedded control system design acquired from project and hands-on laboratory experiences \\
@@ -100,6 +106,7 @@
 \tb Experience with PLC/SCADA/HMI systems, embedded microcontroller programming (Arduino, x86 Assembler)
 %-------------------------------------------------------------------------------
 
+\toprule
 %-------------------------------------------------------------------------------
 %	EDUCATION
 %-------------------------------------------------------------------------------
@@ -119,6 +126,7 @@
 
 %-------------------------------------------------------------------------------
 
+\toprule
 %-------------------------------------------------------------------------------
 %	EXPERIENCE
 %-------------------------------------------------------------------------------
@@ -182,6 +190,7 @@
 
 %-------------------------------------------------------------------------------
 
+\toprule
 %-------------------------------------------------------------------------------
 %	PROJECTS
 %-------------------------------------------------------------------------------
@@ -214,6 +223,7 @@
 \end{position}
 %-------------------------------------------------------------------------------
 
+\toprule
 %-------------------------------------------------------------------------------
 %	INTERESTS
 %-------------------------------------------------------------------------------
