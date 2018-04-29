@@ -43,11 +43,18 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[margin]{res}
+\documentclass[mm]{res}
 
 % Default font is the helvetica postscript font
-%\usepackage{helvet}
+\usepackage{helvet}
 \usepackage{xspace}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ top=10mm
+}
 
 % Increase text height
 \textheight=700pt
@@ -63,15 +70,16 @@
 %-------------------------------------------------------------------------------
 \name{SEBASTIEN BLANCHET}
 
+\fontsize{8pt}{10pt}\selectfont
+
 % Note that addresses can be used for other contact information:
 % -phone numbers
 % -email addresses
 % -linked-in profile
 
-\address{Address1}
-\address{Address2}
-\address{Address3}
-\address{Address4}
+\address{Cupertino, CA, USA}
+\address{s3blanch@edu.uwaterloo.ca}
+\address{(669)-241-8438}
 
 %-------------------------------------------------------------------------------
 
@@ -80,33 +88,32 @@
 %-------------------------------------------------------------------------------
 %	SKILLS
 %-------------------------------------------------------------------------------
-
 %\toprule
 
-\section{SKILLS}
-􏰚\tb Skill1 \\
-􏰚\tb Skill2 \\
-􏰚\tb Skill3 \\
-􏰚\tb Skill4 \\
-􏰚\tb Skill5 \\
-􏰚\tb Skill6
+\section{SKILLS \xspace}
+􏰚\tb Advanced embedded control system design acquired from project and hands-on laboratory experiences \\
+􏰚\tb Exceptional critical thinking and problem-solving skills allowing for complex engineering analysis \\
+􏰚\tb Highly motivated and organized self-starter with a strong attention to detail and work ethic \\
+􏰚\tb Outstanding oral and written communication to share creative ideas fluently in both English and French \\
+􏰚\tb Able to thrive and lead in a team or work independently in a dynamic deadline driven environment \\
+\tb Proficient in iWork, SOLIDWORKS, MATLAB/Simulink, VBA/VB, Python, C++, C, LabVIEW, \LaTeX \xspace , Bash \\
+\tb Experience with PLC/SCADA/HMI systems, embedded microcontroller programming (Arduino, x86 Assembler)
 %-------------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------------
 %	EDUCATION
 %-------------------------------------------------------------------------------
-\section{EDUCATION}
+\section{EDUCATION \xspace}
 % Modify layout
 \begin{format}
 \employer{l}\location{r}\\
 \title{l}\dates{r}\\
 \end{format}
 
-
-\employer{\textbf{SchoolX}}
-\location{\textbf{LocationX}}
-\title{Degree \textit{GPA}}
-\dates{\textit{DateX}}
+\employer{\textbf{University of Waterloo}}
+\location{\textbf{Waterloo, ON, CAN}}
+\title{Candidate for B.ASc. Honours Mechanical Engineering: \textit{3.3/4.0 GPA}}
+\dates{\textit{Sept. 2013 - Present}}
 \begin{position}
 \end{position}
 
@@ -115,7 +122,7 @@
 %-------------------------------------------------------------------------------
 %	EXPERIENCE
 %-------------------------------------------------------------------------------
-\section{EXPERIENCE}
+\section{EXPERIENCE \xspace}
 % Modify layout
 \begin{format}
 \employer{l}\location{r}\\
@@ -124,48 +131,53 @@
 \end{format}
 
 %Apple
-\employer{\textbf{EmployerX}}
-\location{\textbf{LocationX}}
-\title{\textit{TitleX}}
-\dates{\textit{DateX}}
+\employer{\textbf{Apple Inc.}}
+\location{\textbf{Cupertino, CA, USA}}
+\title{\textit{Controls Engineering: Special Projects Group (SPG)}}
+\dates{\textit{Aug. 2017 - Present}}
 \begin{position}
 \tb PosX
 \end{position}
 
 %Altaeros
-\employer{\textbf{EmployerX}}
-\location{\textbf{LocationX}}
-\title{\textit{TitleX}}
-\dates{\textit{DateX}}
+\employer{\textbf{Altaeros Energies}}
+\location{\textbf{Boston, MA, USA}}
+\title{\textit{Systems Engineering}}
+\dates{\textit{Jan. - Apr. 2017}}
 \begin{position}
-\tb PosX
+\tb Performed FEA in ANSYS and PYTHON on prototype of world’s first commercial autonomous aerostat \\
+\tb Coordinated with vendors and ControlEng SERVOsoft to size all control system components (servos, drives) \\
+\tb Utilized electronic lab equipment, sensors and LabVIEW HMI to gather test data and analyze with MATLAB
 \end{position}
 
 %ODI
-\employer{\textbf{EmployerX}}
-\location{\textbf{LocationX}}
-\title{\textit{TitleX}}
-\dates{\textit{DateX}}
+\employer{\textbf{Ontario Die International Inc.}}
+\location{\textbf{Kitchener, ON, CAN}}
+\title{\textit{Research \& Development}}
+\dates{\textit{May - Aug. 2016}}
 \begin{position}
-\tb PosX
+\tb Designed robotic components (electrical, pneumatic, hydraulic) of PLC/CNC bending systems in SOLIDWORKS \\
+\tb Automated tedious SOLIDWORKS tasks with the API SDK in VBA and C++ in MS Visual Studio IDEs \\
+\tb Performed hands-on Q\&A HMI testing, machined components, fabricated assemblies with power/hand tools
 \end{position}
 
 %PWC
-\employer{\textbf{EmployerX}}
-\location{\textbf{LocationX}}
-\title{\textit{TitleX}}
-\dates{\textit{DateX}}
+\employer{\textbf{Pratt \& Whitney Canada}}
+\location{\textbf{Mississauga, ON, CAN}}
+\title{\textit{Operations Program Management Analyst}}
+\dates{\textit{Sept. - Dec. 2015}}
 \begin{position}
-\tb PosX
+\tb Assured on time OEM delivery of a quality turbofan engine while meeting their expectations and needs \\
+\tb Developed Excel VBA programs allowing for improvements in methods of business metric preparation
 \end{position}
 
 %Skyjack
-\employer{\textbf{EmployerX}}
-\location{\textbf{LocationX}}
-\title{\textit{TitleX}}
-\dates{\textit{DateX}}
+\employer{\textbf{Skyjack Inc.}}
+\location{\textbf{Guelph, ON, CAN}}
+\title{\textit{Manufacturing Engineering}}
+\dates{\textit{Jan. - Apr. 2015}}
 \begin{position}
-\tb PosX
+\tb Worked with a team of engineers to troubleshoot production issues at an aerial work platform manufacturer
 \end{position}
 
 %-------------------------------------------------------------------------------
@@ -173,27 +185,41 @@
 %-------------------------------------------------------------------------------
 %	PROJECTS
 %-------------------------------------------------------------------------------
+\section{PROJECTS \xspace}
 % Modify layout
 \begin{format}
 \title{l}\dates{r}\\
 \body\\
 \end{format}
 
-\section{PROJECTS}
-\title{\textbf{ProjNameX,} CourseX}
-\dates{\textit{DateX}}
+% Ball and Beam
+\title{\textbf{Ball and Beam System Laboratory,} ECE 481: Digital Control Systems}
+\dates{\textit{Aug 2017}}
 \begin{position}
-\tb Descx
+\tb Designed LabVIEW HMI, performed system ID, implemented/tuned digital controller on NI cRIO FPGA
 \end{position}
 
+% Drumming Hack
+\title{\textbf{Drumming Rhythm Arduino Hack,} Personal: Wentworth Institute of Technology Hackathon}
+\dates{\textit{Mar. 2017}}
+\begin{position}
+\tb Utilized the IDE and serial COM with MATLAB to develop real-time monitoring of drumming pattern
+\end{position}
+
+% Desc
+\title{\textbf{Model-Based Design of Wind Turbine Pitch Actuation,} ME 360: Control Systems}
+\dates{\textit{Dec. 2016}}
+\begin{position}
+\tb Studied time/frequency domain responses to assure closed loop stability of PI Simulink model in MATLAB
+\end{position}
 %-------------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------------
 %	INTERESTS
 %-------------------------------------------------------------------------------
-\section{INTERESTS}
-􏰚\tb Interest1 \\
-􏰚\tb Interest2
+\section{INTERESTS \xspace}
+􏰚\tb Further developing skills while gaining new exposure to software, real-time controls and electronics \\
+􏰚\tb Repairing off road vehicles, DIY Arduino projects, socializing with friends and playing intramural sports
 %-------------------------------------------------------------------------------
 
 \end{resume}
