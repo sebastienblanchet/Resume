@@ -11,7 +11,7 @@
 % (http://www.rpi.edu/dept/arc/training/latex/resumes/)
 %
 % Modified by:
-% Sebastien Blanchet <s3blanch@edu.uwaterloo> 04/28/2018
+% Sebastien Blanchet <s3blanch@edu.uwaterloo>
 %
 % Important note:
 % This template requires the res.cls file to be in the same directory as the
@@ -20,9 +20,9 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % You can have multiple style options the legal options ones are:
@@ -46,7 +46,7 @@
 \documentclass[mm]{res}
 
 % Default font is the helvetica postscript font
-\usepackage{helvet}
+%\usepackage{helvet}
 \usepackage{xspace}
 \usepackage{fontawesome}
 \usepackage[hidelinks]{hyperref}
@@ -61,7 +61,7 @@
 }
 
 % Increase text height
-\textheight=700pt
+\textheight=720pt
 \textwidth=446pt
 
 % Spacing in between jobs and projects
@@ -85,9 +85,9 @@
 \begin{document}
 
 
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 %	NAME AND ADDRESS SECTION
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 %% Simple name
 %\name{SEBASTIEN BLANCHET}
 
@@ -108,13 +108,13 @@
 \address{\faMobilePhone \xspace (669)-241-8438}
 \address{\faPaperPlaneO \xspace s3blanch@edu.uwaterloo.ca}
 
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 
 \begin{resume}
 
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 %	SKILLS
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 
 \npspctoprule
 
@@ -128,12 +128,12 @@
 \tb Proficient in iWork, SOLIDWORKS, MATLAB/Simulink, Python, C++, C, LabVIEW, \LaTeX \xspace , Bash \\
 \tb Experience with PLC/SCADA/HMI systems, embedded microcontroller
 programming (TI, Raspberry Pi, Arduino, x86 Assembler), Xilinx FPGA, Linux, ECAD tools, ANSYS FEA and CFD
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 
 \toprule
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 %	EDUCATION
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 \section{\faGraduationCap \xspace EDUCATION \xspace}
 % Modify layout
 \begin{format}
@@ -149,12 +149,12 @@ Honours Mechanical Engineering Co-op Program}
 \begin{position}
 \end{position}
 
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 
 \toprule
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 %	EXPERIENCE
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 \section{\faBlackTie \xspace EXPERIENCE \xspace}
 % Modify layout
 \begin{format}
@@ -163,26 +163,27 @@ Honours Mechanical Engineering Co-op Program}
 \body\\
 \end{format}
 
-%Apple
+% Apple: Co-op 6
 \employer{\textbf{\href{https://www.apple.com}{Apple Inc.}}}
 \location{\textbf{Cupertino, CA, USA}}
 \title{\textsl{Controls Engineering: Special Projects Group (SPG)}}
 \dates{\textsl{Aug. 2017 - Present}}
 \begin{position}
-\tb Developed a hardware-in-the-loop system for the validation of power electronic control algorithms \\
+\tb Developed a HIL system to validate power electronic control algorithms for autonomous technologies\\
 \tb Designed system harness to interface HIL with PCBA from schematics and hardware specifications \\
-\tb Programmed LabVIEW HMI for communication between RTOS controller and FPGA models \\
-\tb Implementation of MATLAB/Simulink models in C firmware on embedded MCU, digital filters \\
+\tb Programmed LabVIEW HMI for communication of PXIe RTOS controller and FPGA models and circuit solver \textbf{final deployment}\\
+\tb Implementation of MATLAB/Simulink models firmware in C on embedded MCU, DSP with discrete implementatio of second order filters\\
 \tb Converted continious MATLAB/Simulink models to discrete time for FPGA \\
-\tb Control system plant model emulation on FPGA \\
-\tb Hardware communication protocols serial, Ethernet, SPI PXIe, I2C, UART \\
-\tb Assured robustness of control architecture with verification of safety-critical diagnostics algorithms \\
-\tb Automated regression testing with Python and LabVIEW \\
-\tb Debug and bring-up of high voltage PCBAs safely with in-house test racks, electronic lab equipment and NI instrumentation \\
+\tb Control system plant model emulation on NI cRIO Linux controller and x32 FPGA \\
+\tb Assured robustness of control architecture by virtual faul injection at HIL of safety-critical diagnostics algorithms \\
+\tb Automated SW regression testing with Python and LabVIEW \\
+\tb data acquistion and processing \textbf{anti-aliasing filters}\\
+\tb Hardware communication protocols serial, ethernet, SPI PCIe, I2C, UART, \textbf{physical port of OSI software layering} \\
+\tb Debug and bring-up of high voltage PCBAs with JTAG, ethernet, serial, safely with in-house test racks, electronic lab equipment and NI instrumentation, \textbf{realiability} \\
 \tb Employed Agile software development with Atlassian tools (JIRA, Confluence, Sourcetree) to track firmware bugs and fixes
 \end{position}
 
-%Altaeros
+% Altaeros: Co-op 5
 \employer{\textbf{\href{http://www.altaeros.com}{Altaeros Energies}}}
 \location{\textbf{Boston, MA, USA}}
 \title{\textsl{Systems Engineering}}
@@ -193,10 +194,9 @@ Honours Mechanical Engineering Co-op Program}
 \tb Utilized electronic lab equipment, sensors and LabVIEW HMI to gather test data and analyze with MATLAB \textbf{electromechanical}
 \end{position}
 
-%ODI
+% ODI: Co-op 4
 \employer{\textbf{\href{https://www.ontariodie.com}{Ontario Die International Inc.}}}
-%\employer{\textbf{{Ontario Die International Inc.} \xspace\href{https://www.ontariodie.com}{\faGlobe}}}
-%\employer{\textbf{{Ontario Die International Inc.} \xspace\href{https://www.ontariodie.com}{\faExternalLink}}}
+%\employer{\textbf{{Ontario Die International Inc.} \xspace\href{https://www.ontariodie.com}{\faGlobe \faExternalLink}}}
 \location{\textbf{Kitchener, ON, CAN}}
 \title{\textsl{Research \& Development}}
 \dates{\textsl{May - Aug. 2016}}
@@ -207,7 +207,7 @@ Honours Mechanical Engineering Co-op Program}
 \tb Performed hands-on Q\&A HMI testing, machined components, fabricated assemblies with power/hand tools
 \end{position}
 
-%PWC
+% PWC: Co-op 3
 \employer{\textbf{\href{http://www.pwc.ca}{Pratt \& Whitney Canada}}}
 \location{\textbf{Mississauga, ON, CAN}}
 \title{\textsl{Operations Program Management Analyst}}
@@ -218,7 +218,7 @@ Honours Mechanical Engineering Co-op Program}
 %\tb Collaborated with a multi-disciplinary team to develop logistics plans for new design incorporation
 \end{position}
 
-%Skyjack
+% Skyjack: Co-op 2
 \employer{\textbf{\href{http://www.skyjack.com}{Skyjack Inc.}}}
 \location{\textbf{Guelph, ON, CAN}}
 \title{\textsl{Manufacturing Engineering}}
@@ -228,21 +228,21 @@ Honours Mechanical Engineering Co-op Program}
 %\tb Increased process efficiency by organizing assembly stations and designing of jigs/fixtures with SOLIDWORKS
 \end{position}
 
-%Skyjack
-\employer{\textbf{\href{http://www.norarc.com/en/}{Nor-Arc Steel Fabricators}}}
-\location{\textbf{Earlton, ON, CAN}}
-\title{\textsl{Junior Detailer}}
-\dates{\textsl{June - Aug. 2014}}
-\begin{position}
-\tb Detailed architectural, mechanical and electrical drawings including GD\&T in AutoCAD
-\end{position}
+% % Nor Arc: Co-op 1
+% \employer{\textbf{\href{http://www.norarc.com/en/}{Nor-Arc Steel Fabricators}}}
+% \location{\textbf{Earlton, ON, CAN}}
+% \title{\textsl{Junior Detailer}}
+% \dates{\textsl{June - Aug. 2014}}
+% \begin{position}
+% \tb Detailed architectural, mechanical and electrical drawings including GD\&T in AutoCAD
+% \end{position}
 
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 
 \toprule
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 %	PROJECTS
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 \section{\faPencilSquareO \xspace PROJECTS \xspace}
 % Modify layout
 \begin{format}
@@ -271,7 +271,7 @@ Honours Mechanical Engineering Co-op Program}
 \employer{\textsl{Personal: WIT Hackathon}}
 \dates{\textsl{Mar. 2017}}
 \begin{position}
-\tb Utilized the IDE and serial COM with MATLAB to develop real-time monitoring of drumming pattern
+\tb Coded firmware in C and communicated over UART to MATLAB for real-time monitoring of drumming vibration
 \end{position}
 
 % Wind turbine
@@ -279,7 +279,7 @@ Honours Mechanical Engineering Co-op Program}
 \employer{\textsl{ME360: Control Systems}}
 \dates{\textsl{Dec. 2016}}
 \begin{position}
-\tb Studied time/frequency domain responses to assure closed loop stability of PI Simulink model in MATLAB
+\tb Studied time/frequency domain responses in MATLAB for closed loop stability of PI controlled Simulink
 \end{position}
 
 % Mining device
@@ -287,7 +287,8 @@ Honours Mechanical Engineering Co-op Program}
 \employer{\textsl{ME380: Engineering Design}}
 \dates{\textsl{Nov. 2016}}
 \begin{position}
-\tb Developed a 3D printed enclosure to protect internal Arduino and sensors of severe underground environment, \textbf{design and test}
+\tb Developed a 3D printed enclosure to protect internal Arduino and sensors of severe underground environment
+%\textbf{design and test}
 \end{position}
 
 % DC Motor
@@ -295,7 +296,7 @@ Honours Mechanical Engineering Co-op Program}
 \employer{\textsl{ME360: Control Systems}}
 \dates{\textsl{Oct. 2016}}
 \begin{position}
-\tb Implemented real-time PID control and tuned system with a hardware-in-the-loop Simulink simulation \textbf{design}
+\tb Designed real-time PID control in simulation with Simulink for DC motor; implemented with QUARC C code generation
 \end{position}
 
 % ODI CNC bending
@@ -311,7 +312,7 @@ Honours Mechanical Engineering Co-op Program}
 \employer{\textsl{Personal}}
 \dates{\textsl{Aug. 2016}}
 \begin{position}
-\tb Replaced carburetor, coils and armature of personal dune-buggy upon troubleshooting \textbf{diagnostics}
+\tb Diagnosted fuel system ignition issue then replaced carburetor, \textbf{coils and armature}
 \end{position}
 
 % % SOLIDWORKS Drawing package
@@ -330,7 +331,7 @@ Honours Mechanical Engineering Co-op Program}
 % \tb Programmed a report generating VBA project to extract and reduce SAP enterprise software data
 % \end{position}
 
-% % C++ Robot Design
+% % Embedded Robot Design
 % \title{\textbf{C++ Robot Design}}
 % \employer{\textsl{GENE 121: Digital Computation}}
 % \dates{\textsl{Apr. 2014}}
@@ -338,20 +339,16 @@ Honours Mechanical Engineering Co-op Program}
 % \tb Coded a C++ routine, designed and assembled a robot to perform a colour sorting and movement operation
 % \end{position}
 
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 
 \toprule
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 %	INTERESTS
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 \section{\faLaptop \xspace INTERESTS \xspace}
 􏰚\tb Further developing skills while gaining new exposure to firmware, real-time controls and electronics \\
 􏰚\tb Repairing off-road vehicles, DIY Arduino projects, hockey, golf, swimming and socializing with friends
-%-------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------
 
 \end{resume}
 \end{document}
-
-
-%% TODO
-% Make Title column wider
