@@ -292,7 +292,8 @@
 
 \resumewidth=6.5in
 %\sectionskip=3.5ex plus 1ex minus -.2ex % values stolen from LaTeX
-\sectionskip=5pt
+% This is the space between Skills, Education etc.
+\sectionskip=6pt
 
 
 \def\newsectionwidth#1{%
