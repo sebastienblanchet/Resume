@@ -1,25 +1,28 @@
-# Resume
-
-LaTeX version of my resume.
-
-## Preview
-
-![Screenshot](Resume.jpg)
+# LaTeX Resume
 
 ## Setup
 
-Assumption is that your are running macOS with [MacTeX-2018 Distribution](http://tug.org/mactex/mactex-download.html) installed.
+Instructions assume [MacTeX-2018 Distribution](http://tug.org/mactex/mactex-download.html) is installed on macOS
 
-Clone this repository in your directory (dir) of choice .
-
+Clone this repository in directory (dir) of choice
 ```
 cd dir
 git clone https://github.com/sebastienblanchet/Resume.git
 ```
 
-Change to the repo directory and
-
+Change to the repository directory and compile the tex file with pdflatex
 ```
 cd Resume
 pdflatex Resume.tex
 ```
+
+Open the compiled pdf file
+```
+open Resume.pdf
+```
+
+## Preview
+
+![Screenshot](Resume.jpg)
+
+Updated 05/08/2018
