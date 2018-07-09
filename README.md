@@ -25,4 +25,4 @@ open Resume.pdf
 
 ![Screenshot](Resume.jpg)
 
-Updated 05/08/2018
+Updated 07/09/2018
