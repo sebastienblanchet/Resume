@@ -51,6 +51,8 @@
 \usepackage{fontawesome}
 \usepackage[hidelinks]{hyperref}
 \usepackage{pdfcomment}
+% fix Package inputenc Error: Invalid UTF-8 byte 147
+\UseRawInputEncoding
 %\usepackage{acronym}
 \hypersetup{
   colorlinks=false,
@@ -169,16 +171,14 @@ Honors Mechanical Engineering Co-op Program}
 \title{\textsl{Controls Engineering, Special Projects Group}}
 \dates{\textsl{Aug. 2017 - Aug. 2018}}
 \begin{position}
-\tb Developed a HIL system to validate power electronic control algorithms for autonomous technologies\\
+\tb Developed a HIL system to validate power electronic control algorithms\\
 \tb Emulated and optimized high-fidelity discrete plant models on 32-bit Xilinx FPGA for low latency $\mu$s control \\
 \tb Deployed LabVIEW HMI for deterministic communication between PC, PXIe RTOS controller and FPGA \\
 \tb Flashed microcontroller via JTAG, serial and Ethernet with the latest software builds for bring-up of PCBAs \\
 \tb Employed Agile software development with Atlassian tools and Git to track firmware bugs and fixes \\
 \tb Applied DSP theory to convert continuous Simulink filters to discrete firmware in C for data acquisition\\
-\tb Debugged high voltage hardware with in-house test racks, electronic lab equipment, and NI instrumentation \\
 % come back to this line
 \tb Implemented automated testing Python frameworks for continuous integration and software regression \\
-\tb Assured robustness and reliability of safety-critical diagnostics by virtual fault injection at HIL\\
 \tb Designed system harness to interface HIL and PCBA from electrical schematics and NI hardware datasheets
 % \tb Converted continuous time MATLAB/Simulink algorithms to discrete firmware in C FIR\\
 % \tb Applied DSP theory with discrete filters in C for data acquisition (LPF, HPF, BSF, BPF, anti-alias) \\
