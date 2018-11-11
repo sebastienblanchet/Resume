@@ -12,7 +12,7 @@ git clone https://github.com/sebastienblanchet/Resume.git
 
 Change to the repository directory and compile the tex file with pdflatex
 ```
-cd Resume
+cd Resume/res
 pdflatex Resume.tex
 ```
 

@@ -51,6 +51,7 @@
 \usepackage{fontawesome}
 \usepackage[hidelinks]{hyperref}
 \usepackage{pdfcomment}
+\usepackage{epstopdf}
 % fix Package inputenc Error: Invalid UTF-8 byte 147
 \UseRawInputEncoding
 %\usepackage{acronym}
@@ -63,6 +64,7 @@
   left=0.5in,
   top=0.5in
 }
+\usepackage{graphicx}
 
 % Increase text height
 \textheight=720pt
@@ -71,46 +73,13 @@
 % Spacing in between jobs and projects
 \parskip=6pt
 
-% Custom commands
-\newcommand{\tb}{\textbullet \xspace}
-\newcommand{\toprule}{
-\vspace{6pt}
-\nointerlineskip	% so I have this code
-\moveleft\hoffset\vbox{\hrule width 540pt height 0.5pt}
-\nointerlineskip
-}
-\newcommand{\npspctoprule}{
-\nointerlineskip	% so I have this code
-\moveleft\hoffset\vbox{\hrule width 540pt height 0.5pt}
-\nointerlineskip
-}
+% Shared custom commands
+\input{../common/commands}
 
 \begin{document}
 
-
-%---------------------------------------------------------------------------------------------------------
-%	NAME AND ADDRESS SECTION
-%---------------------------------------------------------------------------------------------------------
-%% Simple name
-%\name{SEBASTIEN BLANCHET}
-
-%% Complex name
-\name{SEBASTIEN BLANCHET
-\href{https://github.com/sebastienblanchet}{\faGithub}
-\href{https://www.linkedin.com/in/sebastien-blanchet/}{\faLinkedinSquare}
-\href{https://sebastienblanchet.github.io}{\faGlobe}
-\href{https://stackoverflow.com/users/9791070/seb-blanchet}{\faStackOverflow}
-}
-
-\fontsize{9pt}{10pt}\selectfont
-
-% Don't modify when hyper link is addedx
-\urlstyle{same}
-
-%\address{Waterloo, ON, CAN}
-\address{\faMapO \xspace Cupertino, CA, USA}
-\address{\faMobilePhone \xspace (669)-241-8438}
-\address{\faPaperPlaneO \xspace s3blanch@edu.uwaterloo.ca}
+% Shared header
+\input{../common/header}
 
 %---------------------------------------------------------------------------------------------------------
 
@@ -122,13 +91,15 @@
 \npspctoprule
 %\faCogs \faSliders \pdftooltip{item}{tooltip}\\
 \section{\faSliders \xspace SKILLS \xspace}
-􏰚\tb Advanced embedded control system modeling and design acquired from project and hands-on lab experience \\
+% \tb Experience real-time software, embedded microcontroller programming
+􏰚\tb Advanced embedded control system modeling and design acquired from work, project and hands-on experience \\
 􏰚\tb Exceptional critical thinking and problem-solving skills allowing for complex engineering analysis \\
 􏰚\tb Highly motivated and organized self-starter with a strong attention to detail and work ethic \\
 􏰚\tb Outstanding oral and written communication to share creative ideas fluently in both English and French \\
 􏰚\tb Able to thrive and lead in a team or work independently in a dynamic deadline driven environment \\
-\tb Proficient in iWork/Office, SOLIDWORKS, MATLAB/Simulink, Python, C++/C, LabVIEW, \LaTeX \xspace , Bash \\
-\tb Familiar with PLC/SCADA/HMI systems, embedded microcontroller programming (Texas Instruments, Arduino, x86 Assembler), FPGA, Linux, front-end web development (HTML5, CSS, JavaScript)
+\tb Proficient in iWork/Office, MATLAB/Simulink, Python, C++/C, LabVIEW, \LaTeX \xspace , Bash, Git, Linux \\
+\tb Experienced with embedded microcontroller (Texas Instruments, Arduino, x86 Assembler, Raspberry Pi), FPGA (VHDL), front-end web (HTML5, JavaScript, CSS, JSON) and application (Java, Swift) programming
+
 %---------------------------------------------------------------------------------------------------------
 
 \toprule
@@ -142,10 +113,10 @@
 \title{l}\dates{r}\\
 \end{format}
 
-\employer{\textbf{\href{https://uwaterloo.ca}{University of Waterloo}}}
+\employer{\textbf{\href{https://uwaterloo.ca}University of Waterloo {\logo{uw}}}}
 \location{\textbf{Waterloo, ON, CAN}}
-\title{Candidate for B.ASc. \textsl{3.3/4.0 GPA}\
-Honors Mechanical Engineering Co-op Program}
+\title{Candidate for B.ASc. \textsl{3.5/4.0 GPA}\\
+Honors Mechanical/Mechatronics Engineering Co-op}
 \dates{\textsl{Sept. 2013 - Apr. 2019}}
 \begin{position}
 \end{position}
@@ -155,7 +126,7 @@ Honors Mechanical Engineering Co-op Program}
 \toprule
 %---------------------------------------------------------------------------------------------------------
 %	EXPERIENCE
-%---------------------------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------------------------
 % \faSuitcase \faBlackTie
 \section{\faBlackTie \xspace EXPERIENCE \xspace}
 % Modify layout
@@ -165,21 +136,40 @@ Honors Mechanical Engineering Co-op Program}
 \body\\
 \end{format}
 
+% Tesla: Co-op 7
+\employer{\textbf{\href{https://www.tesla.com/}Tesla {\logo{tesla}}}}
+\location{\textbf{Palo Alto, CA, USA}}
+\title{\textsl{Firmware Engineering - Energy Products}}
+\dates{\textsl{Sep. 2018 - Present}}
+\begin{position}
+\tb Programming firmware in C on embedded systems DSP and MCU for power electronic and thermal controls\\
+\tb Layered software architecture: low-level RTOS and kernel, communication protocols \\
+\tb Improving existing Java automatic code generation tools and Python regression testing frameworks\\
+\tb Following SCRUM software development: Git version control, pull requests and code review
+% \tb Coding layered architecure CAN and UDS communication protocols for diagnostics and data transfer between ECUs \\
+% \tb Developping self-test capability on ECU \\
+% \tb Python for automated testing regression frameworks \\
+% \tb Implementing power electronics control algorithms for industrial inverter, rectifiers \\
+% \tb layered software architecture \\
+% BIOS TI's RTOS kernel, DSP , MCU
+% \tb \textbf{\textsl{Technologies: C, Git, Java, Python, Linux, RTOS, Go}} \\
+% \tb \textbf{\textsl{Methodologies: Agile, Scrum, Test Driven Development, Embdedded Systems, Power Electronics}} \\
+\end{position}
+
 % Apple: Co-op 6
-\employer{\textbf{\href{https://www.apple.com}{Apple Inc.}}}
+\employer{\textbf{\href{https://www.apple.com}Apple {\logo{apple}}}}
 \location{\textbf{Cupertino, CA, USA}}
-\title{\textsl{Controls Engineering, Special Projects Group}}
+\title{\textsl{Controls Engineering - Special Projects Group}}
 \dates{\textsl{Aug. 2017 - Aug. 2018}}
 \begin{position}
-\tb Developed a HIL system to validate power electronic control algorithms\\
+\tb Developed a hardware-in-the-loop system to validate power electronic control algorithms in C\\
 \tb Emulated and optimized high-fidelity discrete plant models on 32-bit Xilinx FPGA for low latency $\mu$s control \\
 \tb Deployed LabVIEW HMI for deterministic communication between PC, PXIe RTOS controller and FPGA \\
 \tb Flashed microcontroller via JTAG, serial and Ethernet with the latest software builds for bring-up of PCBAs \\
-\tb Employed Agile software development with Atlassian tools and Git to track firmware bugs and fixes \\
 \tb Applied DSP theory to convert continuous Simulink filters to discrete firmware in C for data acquisition\\
-% come back to this line
-\tb Implemented automated testing Python frameworks for continuous integration and software regression \\
-\tb Designed system harness to interface HIL and PCBA from electrical schematics and NI hardware datasheets
+\tb Implemented automated testing Python frameworks for continuous integration and software regression
+% \tb Employed Agile software development with Atlassian tools and Git to track firmware bugs and fixes \\
+% \tb Designed system harness to interface HIL and PCBA from electrical schematics and NI hardware datasheets
 % \tb Converted continuous time MATLAB/Simulink algorithms to discrete firmware in C FIR\\
 % \tb Applied DSP theory with discrete filters in C for data acquisition (LPF, HPF, BSF, BPF, anti-alias) \\
 % \tb Hardware communication protocols interfaces serial, ethernet, SPI PCIe, I2C, UART, JTAG \textbf{physical port interface of OSI software layering} \\
@@ -187,44 +177,42 @@ Honors Mechanical Engineering Co-op Program}
 \end{position}
 
 % Altaeros: Co-op 5
-\employer{\textbf{\href{http://www.altaeros.com}{Altaeros Energies}}}
+\employer{\textbf{\href{http://www.altaeros.com}Altaeros {\logo{altaeros}}}}
 \location{\textbf{Boston, MA, USA}}
-\title{\textsl{Systems Engineering}}
+\title{\textsl{Systems Engineering - Research \& Development}}
 \dates{\textsl{Jan. - Apr. 2017}}
 \begin{position}
 \tb Performed FEA in ANSYS and Python on a prototype of an autonomous aerostat's electromechanical system \\
-\tb Coordinated with vendors and ControlEng SERVOsoft to size all control system components (servos, VFDs) \\
 \tb Utilized electronic lab equipment and LabVIEW HMI to log test data and analyze with MATLAB
+% \tb Coordinated with vendors and ControlEng SERVOsoft to size all control system components (servos, VFDs) \\
 \end{position}
 
 % ODI: Co-op 4
-\employer{\textbf{\href{https://www.ontariodie.com}{Ontario Die International Inc.}}}
-%\employer{\textbf{{Ontario Die International Inc.} \xspace\href{https://www.ontariodie.com}{\faGlobe \faExternalLink}}}
-\location{\textbf{Kitchener, ON, CAN}}
-\title{\textsl{Research \& Development}}
+\employer{\textbf{\href{https://www.ontariodie.com}Ontario Die International {\logo{odi}}}}
+\title{\textsl{Mechanical Design - Research \& Development}}
 \dates{\textsl{May - Aug. 2016}}
 \begin{position}
-\tb Designed robotic components (electrical, hydraulic) of PLC/CNC bending systems in SOLIDWORKS \\
+\tb Designed robotic components (electrical, hydraulic) of PLC/CNC bending systems in SOLIDWORKS
 %\tb Improved existing technology by applying lean, DFM and DFA principles to prototyping and research projects \\
-\tb Automated tedious SOLIDWORKS tasks in VBA and C++ with the API in MS Visual Studio IDE \\
-\tb Performed hands-on Q\&A HMI testing, machined components, fabricated assemblies with power/hand tools
+% \tb Automated tedious SOLIDWORKS tasks in VBA and C++ with the API in MS Visual Studio IDE
+% \tb Performed hands-on Q\&A HMI testing, machined components, fabricated assemblies with power/hand tools
 \end{position}
 
 % PWC: Co-op 3
-\employer{\textbf{\href{http://www.pwc.ca}{Pratt \& Whitney Canada}}}
+\employer{\textbf{\href{http://www.pwc.ca}Pratt \& Whitney Canada {\logo{pwc}}}}
 \location{\textbf{Mississauga, ON, CAN}}
-\title{\textsl{Operations Program Management}}
+\title{\textsl{Program Management - Turbofan Operations}}
 \dates{\textsl{Sept. - Dec. 2015}}
 \begin{position}
-\tb Assured on time OEM delivery of a quality turbofan engine while meeting their expectations and needs \\
-\tb Developed Excel VBA programs allowing for improvements in methods of business metric preparation
+\tb Assured on time OEM delivery of a quality turbofan engine while meeting their expectations and needs
+% \tb Developed Excel VBA programs allowing for improvements in methods of business metric preparation
 %\tb Collaborated with a multi-disciplinary team to develop logistics plans for new design incorporation
 \end{position}
 
 % Skyjack: Co-op 2
-\employer{\textbf{\href{http://www.skyjack.com}{Skyjack Inc.}}}
+\employer{\textbf{\href{http://www.skyjack.com}Linamar {\logo{linamar}}}}
 \location{\textbf{Guelph, ON, CAN}}
-\title{\textsl{Manufacturing Engineering}}
+\title{\textsl{Manufacturing Engineering - Skyjack}}
 \dates{\textsl{Jan. - Apr. 2015}}
 \begin{position}
 \tb Worked with a team of engineers to troubleshoot production issues at an aerial work platform manufacturer
@@ -232,9 +220,9 @@ Honors Mechanical Engineering Co-op Program}
 \end{position}
 
 % % Nor Arc: Co-op 1
-% \employer{\textbf{\href{http://www.norarc.com/en/}{Nor-Arc Steel Fabricators}}}
+% \employer{\textbf{\href{http://www.norarc.com/en/}{Nor-Arc}}}
 % \location{\textbf{Earlton, ON, CAN}}
-% \title{\textsl{Junior Detailer}}
+% \title{\textsl{Junior Detailer - Steel Fabricators}}
 % \dates{\textsl{June - Aug. 2014}}
 % \begin{position}
 % \tb Detailed architectural, mechanical and electrical drawings including GD\&T in AutoCAD
@@ -253,21 +241,29 @@ Honors Mechanical Engineering Co-op Program}
 \body\\
 \end{format}
 
-% % Title [X]
+% % TEMPLATE [X]
 % \title{\textsl{Latest Proj}}
 % \employer{\textsl{X}}
 % \dates{\textsl{Ongoing}}
 % \begin{position}
 % \tb next
 % \end{position}
+% Portfolio [SW]
+\title{\textsl{Web Portfolio Development}}
+\employer{\textsl{Personal}}
+\dates{\textsl{Ongoing}}
+\begin{position}
+\tb Hosting personal website to showcase portfolio via GitHub utilizing knowledge of front-end coding
+\end{position}
 
-% % Portfolio [SW]
-% \title{\textsl{Web Portfolio Development}}
-% \employer{\textsl{Personal}}
-% \dates{\textsl{Ongoing}}
-% \begin{position}
-% \tb Hosting personal website to showcase portfolio via GitHub utilizing knowledge of HTML5, CSS and JavaScript
-% \end{position}
+% Portfolio [SW]
+\title{\textsl{Software University: Swift}}
+\employer{\textsl{Apple}}
+\dates{\textsl{Aug. 2018}}
+\begin{position}
+\tb Reviewed the fundementals of object oriented programming in Swift and coded basic application
+\end{position}
+
 
 % DSA [SW]
 \title{\textsl{MIT Open Courseware Self-Study}}
@@ -280,7 +276,7 @@ Honors Mechanical Engineering Co-op Program}
 % Ball and Beam [CTL]
 \title{\textsl{Ball \& Beam Lab}}
 \employer{\textsl{ECE481: Digital Control Systems}}
-\dates{\textsl{Aug 2017}}
+\dates{\textsl{Aug. 2017}}
 \begin{position}
 \tb Designed LabVIEW HMI, performed system ID, implemented/tuned digital controller on NI cRIO FPGA
 \end{position}
@@ -309,14 +305,14 @@ Honors Mechanical Engineering Co-op Program}
 \tb Studied time/frequency domain responses in MATLAB for closed-loop stability of PI controlled Simulink
 \end{position}
 
-% Mining device [CTL]
-\title{\textsl{Mining Safety Device}}
-\employer{\textsl{ME380: Engineering Design}}
-\dates{\textsl{Nov. 2016}}
-\begin{position}
-\tb Developed a 3D printed enclosure to protect internal Arduino and sensors of severe underground environment
-%\textsl{design and test}
-\end{position}
+% % Mining device [CTL]
+% \title{\textsl{Mining Safety Device}}
+% \employer{\textsl{ME380: Engineering Design}}
+% \dates{\textsl{Nov. 2016}}
+% \begin{position}
+% \tb Developed a 3D printed enclosure to protect internal Arduino and sensors of severe underground environment
+% %\textsl{design and test}
+% \end{position}
 
 % DC Motor [CTL]
 \title{\textsl{DC Motor Control System}}
@@ -359,12 +355,12 @@ Honors Mechanical Engineering Co-op Program}
 % \end{position}
 
 % Embedded Robot Design [SW]
-\title{\textsl{Embedded Robot Design}}
-\employer{\textsl{GENE121: Digital Computation}}
-\dates{\textsl{Apr. 2014}}
-\begin{position}
-\tb Coded a C++ algorithm, designed and assembled a robot to perform a color sorting and movement operation
-\end{position}
+% \title{\textsl{Embedded Robot Design}}
+% \employer{\textsl{GENE121: Digital Computation}}
+% \dates{\textsl{Apr. 2014}}
+% \begin{position}
+% \tb Coded a C++ algorithm, designed and assembled a robot to perform a color sorting and movement operation
+% \end{position}
 
 %---------------------------------------------------------------------------------------------------------
 
@@ -374,7 +370,7 @@ Honors Mechanical Engineering Co-op Program}
 %---------------------------------------------------------------------------------------------------------
 % \faGamepad \faLaptop \faDribbble \faMotorcycle
 \section{\faMotorcycle \xspace INTERESTS \xspace}
-\tb Further developing skills related to firmware, electronics, machine learning and artificial intelligence\\
+\tb Further developing skills related to firmware, electronics, machine learning and embedded systems\\
 􏰚\tb Repairing off-road vehicles, DIY electronics, hockey, golf, swimming and socializing with friends
 %---------------------------------------------------------------------------------------------------------
 

@@ -1,0 +1,31 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Custom Commands 
+%
+%
+% Author: Sebastien Blanchet <s3blanch@edu.uwaterloo>
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Custom commands
+\newcommand{\tb}{\textbullet \xspace}
+\newcommand{\toprule}{
+\vspace{6pt}
+\nointerlineskip	% so I have this code
+\moveleft\hoffset\vbox{\hrule width 540pt height 0.5pt}
+\nointerlineskip
+}
+\newcommand{\npspctoprule}{
+\nointerlineskip	% so I have this code
+\moveleft\hoffset\vbox{\hrule width 540pt height 0.5pt}
+\nointerlineskip
+}
+
+\newcommand{\logo}[1]{
+\includegraphics[width=7pt,height=7pt]{../fig/#1}
+}
+
+\newcommand{\vcenteredinclude}[1]{\begingroup
+\setbox0=\hbox{\includegraphics[width=6pt,height=6pt]{../fig/#1}}%
+\parbox{\wd0}{\box0}\endgroup
+}
