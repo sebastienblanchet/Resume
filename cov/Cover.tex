@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Sebastien Blanchet <s3blanch@edu.uwaterloo>
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%---------------------------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%---------------------------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{cov}
+
+% Default font is the helvetica postscript font
+%\usepackage{helvet}
+\usepackage{xspace}
+\usepackage{fontawesome}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks=false,
+}
+\usepackage{pdfcomment}
+\UseRawInputEncoding
+\usepackage{lipsum}
+\usepackage[useregional]{datetime2}
+\usepackage{geometry}
+\geometry{
+  letterpaper,
+  left=0.5in,
+  top=0.5in
+}
+
+% Increase text height
+\textheight=720pt
+\textwidth=500pt
+
+% Spacing in between jobs and projects
+\parskip=6pt
+
+% Custom commands
+\input{../common/commands}
+
+
+\newcommand{\Company}{X}
+
+\begin{document}
+
+\input{../common/header}
+
+\begin{resume}
+\npspctoprule
+\\
+\today \\
+
+\Company,\\
+Address \\
+\\
+Dear, \\
+
+\lipsum
+
+
+Best Regards\\
+\\
+Sebastien Blanchet
+
+\end{resume}
+
+\end{document} 

@@ -11,12 +11,12 @@
 \newcommand{\tb}{\textbullet \xspace}
 \newcommand{\toprule}{
 \vspace{6pt}
-\nointerlineskip	% so I have this code
+\nointerlineskip    % so I have this code
 \moveleft\hoffset\vbox{\hrule width 540pt height 0.5pt}
 \nointerlineskip
 }
 \newcommand{\npspctoprule}{
-\nointerlineskip	% so I have this code
+\nointerlineskip    % so I have this code
 \moveleft\hoffset\vbox{\hrule width 540pt height 0.5pt}
 \nointerlineskip
 }
@@ -28,4 +28,49 @@
 \newcommand{\vcenteredinclude}[1]{\begingroup
 \setbox0=\hbox{\includegraphics[width=6pt,height=6pt]{../fig/#1}}%
 \parbox{\wd0}{\box0}\endgroup
+}
+
+% Define colors as per http://latexcolor.com/
+\definecolor{yaleblue}{rgb}{0.06, 0.3, 0.57}
+\definecolor{violet(ryb)}{rgb}{0.53, 0.0, 0.69}
+\definecolor{princetonorange}{rgb}{1.0, 0.56, 0.0}
+\definecolor{babyblue}{rgb}{0.54, 0.81, 0.94}
+\definecolor{slategray}{rgb}{0.44, 0.5, 0.56}
+
+% Logos based on color switch
+\newcommand{\commoncol}{black}
+
+\iftoggle{color}{
+    % Headings
+    \newcommand{\headingskills}{\textcolor{\commoncol}{\faSliders \xspace SKILLS \xspace}}
+    \newcommand{\headingeducation}{\textcolor{\commoncol}{\faGraduationCap \xspace EDUCATION \xspace}}
+    \newcommand{\headingexperience}{\textcolor{\commoncol}{\faBlackTie \xspace EXPERIENCE \xspace}}
+    \newcommand{\headingprojects}{\textcolor{\commoncol}{\faPencilSquareO \xspace PROJECTS \xspace}}
+    \newcommand{\headinginterests}{\textcolor{\commoncol}{\faMotorcycle \xspace INTERESTS \xspace}}
+    
+    % Logos 
+    \newcommand{\logouw}{\logo{color/uw}}
+    \newcommand{\logotesla}{\logo{color/tesla}}
+    \newcommand{\logoapple}{\logo{color/apple}}
+    \newcommand{\logoaltaeros}{\logo{color/altaeros}}
+    \newcommand{\logoodi}{\logo{color/odi}}
+    \newcommand{\logopwc}{\logo{color/pwc}}
+    \newcommand{\logolinamar}{\logo{color/linamar}}
+}{
+    % Headings
+    \newcommand{\headingskills}{\faSliders \xspace SKILLS \xspace}
+    \newcommand{\headingeducation}{\faGraduationCap \xspace EDUCATION \xspace}
+    \newcommand{\headingexperience}{\faBlackTie \xspace EXPERIENCE \xspace}
+    \newcommand{\headingprojects}{\faPencilSquareO \xspace PROJECTS \xspace}
+    \newcommand{\headinginterests}{\faMotorcycle \xspace INTERESTS \xspace}    
+    \newcommand{\logouw}{\logo{bw€/uw}}
+
+    % Logos
+    \newcommand{\logotesla}{\logo{bw/tesla}}
+    \newcommand{\logoapple}{\logo{bw/apple}}
+    \newcommand{\logoaltaeros}{\logo{bw/altaeros}}
+    \newcommand{\logoodi}{\logo{bw/odi}}
+    \newcommand{\logopwc}{\logo{bw/pwc}}
+    \newcommand{\logolinamar}{\logo{bw/linamar}}
+
 }

@@ -8,18 +8,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %---------------------------------------------------------------------------------------------------------
-%	NAME AND ADDRESS SECTION
+%   NAME AND ADDRESS SECTION
 %---------------------------------------------------------------------------------------------------------
 
-%% Simple name
-%\name{SEBASTIEN BLANCHET}
-
 %% Complex name
-\name{SEBASTIEN BLANCHET
-\href{https://github.com/sebastienblanchet}{\faGithub}
-\href{https://www.linkedin.com/in/sebastien-blanchet/}{\faLinkedinSquare}
-\href{https://sebastienblanchet.github.io}{\faGlobe}
-\href{https://stackoverflow.com/users/9791070/seb-blanchet}{\faStackOverflow}
+\iftoggle{color}{
+    \name{\textcolor{\commoncol}{SEBASTIEN BLANCHET}
+    \href{https://github.com/sebastienblanchet}{\textcolor{violet}{\faGithub}}
+    \href{https://www.linkedin.com/in/sebastien-blanchet/}{\textcolor{yaleblue}{\faLinkedinSquare}}
+    \href{https://sebastienblanchet.github.io}{\textcolor{babyblue}{\faGlobe}}
+    \href{https://stackoverflow.com/users/9791070/seb-blanchet}{\textcolor{princetonorange}{\faStackOverflow}}
+    }
+}{
+    \name{SEBASTIEN BLANCHET
+    \href{https://github.com/sebastienblanchet}{\faGithub}
+    \href{https://www.linkedin.com/in/sebastien-blanchet/}{\faLinkedinSquare}
+    \href{https://sebastienblanchet.github.io}{\faGlobe}
+    \href{https://stackoverflow.com/users/9791070/seb-blanchet}{\faStackOverflow}
+    }
 }
 
 \fontsize{9pt}{10pt}\selectfont
