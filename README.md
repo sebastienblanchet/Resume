@@ -7,7 +7,9 @@
 ## Contents
 
 * [Setup](#setup)
+* [Files](#files)
 * [Preview](#preview)
+* [License](#license)
 
 ## Setup
 
@@ -33,8 +35,43 @@ Open the compiled pdf file:
 open Resume.pdf
 ```
 
+## Files
+
+File contents of `dir`:
+
+```bash
+dir:
+|
+├── LICENSE
+├── README.md
+├── common
+│   ├── Commands.tex
+│   └── Header.tex
+├──cov:
+│   ├── Cover.tex
+│   └── cov.cls
+├──fig:
+│   ├──bw:
+│   │   ├── altaeros.png
+│   │   └── uw.png
+│   └──color:
+│       ├── altaeros.png
+│       └── uw.png
+└──res:
+    ├── Resume.jpg           #
+    ├── Resume.pdf
+    ├── Resume.tex
+    └── res.cls
+
+```
+
 ## Preview
 
 ![Screenshot](res/Resume.jpg)
 
 Updated 12/8/2018
+
+
+## License
+
+[MIT License](LICENSE)
