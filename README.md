@@ -37,10 +37,10 @@ open Resume.pdf
 
 ## Files
 
-File contents of `dir`:
+File contents of `dir/Resume`:
 
 ```bash
-dir:
+dir/Resume:
 |
 ├── LICENSE
 ├── README.md
