@@ -40,13 +40,28 @@
 % Logos based on color switch
 \newcommand{\commoncol}{black}
 
+\iftoggle{fr}{
+    \newcommand{\skillsname}{APTITUDES}
+    \newcommand{\educationname}{\'EDUCATION}
+    \newcommand{\experiencename}{EXP\'ERIENCE}
+    \newcommand{\projectsname}{PROJETS}
+    \newcommand{\interestsname}{INT\'ER\^ESTS}
+}{
+    \newcommand{\skillsname}{SKILLS}
+    \newcommand{\educationname}{EDUCATION}
+    \newcommand{\experiencename}{EXPERIENCE}
+    \newcommand{\projectsname}{PROJECTS}
+    \newcommand{\interestsname}{INTERESTS}
+    
+}
+
 \iftoggle{color}{
     % Headings
-    \newcommand{\headingskills}{\textcolor{\commoncol}{\faSliders \xspace SKILLS \xspace}}
-    \newcommand{\headingeducation}{\textcolor{\commoncol}{\faGraduationCap \xspace EDUCATION \xspace}}
-    \newcommand{\headingexperience}{\textcolor{\commoncol}{\faBlackTie \xspace EXPERIENCE \xspace}}
-    \newcommand{\headingprojects}{\textcolor{\commoncol}{\faPencilSquareO \xspace PROJECTS \xspace}}
-    \newcommand{\headinginterests}{\textcolor{\commoncol}{\faMotorcycle \xspace INTERESTS \xspace}}
+    \newcommand{\headingskills}{\textcolor{\commoncol}{\faSliders \xspace \skillsname \xspace}}
+    \newcommand{\headingeducation}{\textcolor{\commoncol}{\faGraduationCap \xspace \educationname \xspace}}
+    \newcommand{\headingexperience}{\textcolor{\commoncol}{\faBlackTie \xspace \experiencename \xspace}}
+    \newcommand{\headingprojects}{\textcolor{\commoncol}{\faPencilSquareO \xspace \projectsname \xspace}}
+    \newcommand{\headinginterests}{\textcolor{\commoncol}{\faMotorcycle \xspace \interestsname \xspace}}
     
     % Logos 
     \newcommand{\logouw}{\logo{color/uw}}

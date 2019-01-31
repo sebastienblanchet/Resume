@@ -18,29 +18,7 @@
 % .tex file. The res.cls file provides the resume style used for structuring the
 % document.
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%---------------------------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%---------------------------------------------------------------------------------------------------------
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% You can have multiple style options the legal options ones are:
-%
-%   centered:	the name and address are centered at the top of the page
-%				(default)
-%
-%   line:		the name is the left with a horizontal line then the address to
-%				the right
-%
-%   overlapped:	the section titles overlap the body text (default)
-%
-%   margin:		the section titles are to the left of the body text
-%
-%   11pt:		use 11 point fonts instead of 10 point fonts
-%
-%   12pt:		use 12 point fonts instead of 10 point fonts
-%
+%  VERSION FRANÇAISE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[mm]{res}
@@ -81,10 +59,8 @@
 \toggletrue{color}
 % \togglefalse{color}
 
-% Handle french case
 \newtoggle{fr}
-%\toggletrue{fr}
-\togglefalse{fr}
+\toggletrue{fr}
 
 % Shared custom commands
 \input{../common/commands}
@@ -99,39 +75,39 @@
 \begin{resume}
 
 %---------------------------------------------------------------------------------------------------------
-%	SKILLS
+%   SKILLS
 %---------------------------------------------------------------------------------------------------------
 \npspctoprule
 \section{\headingskills}
-\tb \textbf{Programming:} Embedded C, C++, Python, MATLAB, Swift, Java, Javascript\\
-\tb \textbf{Hardware:} MCU (ARM, Texas Instrument, Arduino, Raspberry Pi), FPGA (VHDL, Xilinx Vivado)\\
+\tb \textbf{Programmation:} C embarqu\'e, C++, Python, MATLAB, Swift, Java, Javascript\\
+\tb \textbf{Hardware:} MCU (ARM, TI, Arduino, x86 Assembler, Raspberry Pi), FPGA (VHDL, Xilinx Vivado)\\
 \tb \textbf{Simulation:} LabVIEW FPGA/RT, Simulink, OPAL-RT, Speedgoat, dSPACE, SOLIDWORKS, ANSYS\\
-\tb \textbf{OS:} Windows, macOS, Linux, RTOS (FreeRTOS, Phar Lap ETS, TI-RTOS, QNX), UNIX\\
-\tb \textbf{Protocols:} CAN, LIN, UDS, SPI, I2C, JTAG, UART, USB, RS422, Ethernet, FTP, PCIe\\
-\tb \textbf{Integration:} Git Bash, Atlassian (JIRA, Confluence, Stash) GitHub, Jenkins, YAML, SCons, Maven\\
-\tb \textbf{Concepts:} embedded discrete controls, DSP, HIL/SIL, TDD, SCRUM, OOP, DSA, CI, API, SoC, ASIC\\
-% \tb \textbf{Libraries:} Numpy, Pytest, Tensorflow\\
-\tb \textbf{Other:} Bash, Vim, HTML5, CSS, JSON, XML, \LaTeX, Markdown, MISRA, Assembly\xspace
+\tb \textbf{OS:} Windows, macOS, Linux (Ubuntu, Red Hat), RTOS (FreeRTOS, Phar Lap ETS)\\
+\tb \textbf{Protocoles:} CAN, LIN, UDS, SPI, I2C, JTAG, UART, USB, RS422, Ethernet, FTP, PCIe\\
+\tb \textbf{Int\'egration:} Git Bash, Atlassian (JIRA, Confluence, Stash) GitHub, Jenkins, YAML, SCons, Maven\\
+\tb \textbf{Concepts:} syst\`emes de contr\^ole discr\`ets, DSP, HIL/SIL, TDD, SCRUM, OOP, DSA, CI, API\\
+\tb \textbf{Autres:} Bash, Vim, HTML5, CSS, JSON, XML, \LaTeX, Markdown, MISRA\xspace
 
 %---------------------------------------------------------------------------------------------------------
 
 \toprule
 
 %---------------------------------------------------------------------------------------------------------
-%	EDUCATION
+%   EDUCATION
 %---------------------------------------------------------------------------------------------------------
 \section{\headingeducation}
 % Modify layout
 \begin{format}
 \employer{l}\location{r}\\
 \title{l}\dates{r}\\
-\end{format}
+\end{format}  
 
 \employer{\textbf{\href{https://uwaterloo.ca}{University of Waterloo}{\logouw}}}
 \location{\textbf{Waterloo, ON, CAN}}
-\title{Candidate for B.ASc. \textsl{GPA: 3.5/4.0}\\
-Honors Mechanical/Mechatronics Engineering Co-op}
-\dates{\textsl{Sept. 2013 - Apr. 2019}}
+\title{Candidat pour B.ASc. \textsl{GPA: 3.5/4.0}\\
+G\'enie M\'ecanique/M\'ecatronique, Co-op}
+% janv.   f\'evr.   mars    avril   mai     juin    juil.   août    sept.   oct.    nov.    d\'ec.
+\dates{\textsl{sept. 2013 - avril 2019}}
 \begin{position}
 \end{position}
 
@@ -140,7 +116,7 @@ Honors Mechanical/Mechatronics Engineering Co-op}
 \toprule
 
 %---------------------------------------------------------------------------------------------------------
-%	EXPERIENCE
+%   EXPERIENCE
 %---------------------------------------------------------------------------------------------------------
 % \faSuitcase \faBlackTie
 \section{\headingexperience}
@@ -154,100 +130,72 @@ Honors Mechanical/Mechatronics Engineering Co-op}
 % Tesla: Co-op 9
 \employer{\textbf{\href{https://www.tesla.com/}{Tesla}{\logotesla}}}
 \location{\textbf{Palo Alto, CA, USA}}
-\title{\textsl{Firmware Engineering - Energy Products}}
-\dates{\textsl{Sept. - Dec. 2018}}
+\title{\textsl{G\'enie Embarqu\'e - Produits \'Energie}}
+\dates{\textsl{sept. - d\'ec. 2018}}
 \begin{position}
-\tb Coding MISRA compliant firmware in C for power electronic controls on embedded system's DSPs and MCUs\\
+\tb Coding MISRA compliant embarqu\'e in C for power electronic controls on embedded system's DSPs and MCUs\\
 \tb Full-stack exposure: RTOS kernel, serial drivers (UDS, CAN, SPI), application level controls and diagnostics\\
 \tb Deploying embedded self-test C framework multiple ECUs to eliminate manual debugging at EOL/field\\
 \tb Improving existing Java code generations tools and Python Pytest regression testing\\
-% \tb Employing SCRUM software development with Atlassian tools, Git Bash, code review\\
 \tb Assuring CI with Atlassian tools, Git Bash, code review, Jenkins builds, unit tests, SIL, HIL
-% \tb Coding layered architecure CAN and UDS communication protocols for diagnostics and data transfer between ECUs\\
-% \tb Implementing power electronics control algorithms for industrial inverter, rectifiers\\
-% \tb \textbf{\textsl{Technologies: C, Git, Java, Python, Linux, RTOS, Go, Kernel}}\\
-% \tb \textbf{\textsl{Methodologies: Agile, Scrum, Test Driven Development, Embdedded Systems, Power Electronics}}\\
-%. Tested using unit tests (TDD) and HIL testing, scons, SIL
 \end{position}
 
 % Apple: Co-op 6 - 8 
 \employer{\textbf{\href{https://www.apple.com}{Apple}{\logoapple}}}
 \location{\textbf{Cupertino, CA, USA}}
-\title{\textsl{Controls Engineering - Special Projects Group}}
-\dates{\textsl{Aug. 2017 - Aug. 2018}}
+\title{\textsl{G\'enie de Contr\^ole - Groupe de Projects Sp\'eciaux}}
+\dates{\textsl{août 2017 - août 2018}}
 \begin{position}
 \tb Developed a hardware-in-the-loop system for validation of power electronic control algorithms in C\\
 \tb Emulated and optimized high-fidelity discrete plant models on 32-bit Xilinx FPGA for low latency $\mu$s control\\
 \tb Deployed LabVIEW HMI for deterministic communication between PC, PXIe RTOS controller and FPGA\\
 \tb Flashed microcontroller via JTAG, serial and Ethernet with the latest software builds for bring-up of PCBAs\\
-\tb Applied DSP theory to convert continuous Simulink filters to discrete firmware in C for data acquisition\\
+\tb Applied DSP theory to convert continuous Simulink filters to discrete embarqu\'e in C for data acquisition\\
 \tb Implemented automated testing Python frameworks for continuous integration and software regression
-% \tb Designed system harness to interface HIL and PCBA from electrical schematics and NI hardware datasheets
-% \tb Converted continuous time MATLAB/Simulink algorithms to discrete firmware in C FIR\\
-% \tb Applied DSP theory with discrete filters in C for data acquisition (LPF, HPF, BSF, BPF, anti-alias)\\
-% \tb Hardware communication protocols interfaces serial, ethernet, SPI PCIe, I2C, UART, JTAG \textbf{physical port interface of OSI software layering}\\
-% \tb Acquire and generate analog and digital signals, control timing, and implement signal processing on RT and FPGA parallel processing\\
 \end{position}
 
 % Altaeros: Co-op 5
 \employer{\textbf{\href{http://www.altaeros.com}{Altaeros}{\logoaltaeros}}}
 \location{\textbf{Boston, MA, USA}}
-\title{\textsl{Systems Engineering - Research \& Development}}
-\dates{\textsl{Jan. - Apr. 2017}}
+\title{\textsl{G\'enie de Syst\`emes - Recherche et D\'eveloppement}}
+\dates{\textsl{janv. - avril 2017}}
 \begin{position}
 \tb Performed numerical analysis in Python on prototype of an autonomous aerostat's electromechanical system\\
 \tb Utilized electronic lab equipment and LabVIEW HMI to log test data and analyze with MATLAB
-% \tb Coordinated with vendors and ControlEng SERVOsoft to size all control system components (servos, VFDs)\\
 \end{position}
 
 % ODI: Co-op 4
 \employer{\textbf{\href{https://www.ontariodie.com}{Ontario Die International}{\logoodi}}}
-\location{\textbf{Waterloo, ON, CAN}}
 \title{\textsl{Mechanical Design - Research \& Development}}
-\dates{\textsl{May - Aug. 2016}}
+\dates{\textsl{mai - août 2016}}
 \begin{position}
 \tb Designed robotic components (electrical, hydraulic) of PLC/CNC bending systems in SOLIDWORKS
-%\tb Improved existing technology by applying lean, DFM and DFA principles to prototyping and research projects\\
-% \tb Automated tedious SOLIDWORKS tasks in VBA and C++ with the API in MS Visual Studio IDE
-% \tb Performed hands-on Q\&A HMI testing, machined components, fabricated assemblies with power/hand tools
 \end{position}
 
 % PWC: Co-op 3
 \employer{\textbf{\href{http://www.pwc.ca}{Pratt \& Whitney Canada}{\logopwc}}}
 \location{\textbf{Mississauga, ON, CAN}}
 \title{\textsl{Program Management - Turbofan Operations}}
-\dates{\textsl{Sept. - Dec. 2015}}
+\dates{\textsl{sept. - d\'ec. 2015}}
 \begin{position}
 \tb Assured on time OEM delivery of a quality turbofan engine while meeting their expectations and needs
-% \tb Developed Excel VBA programs allowing for improvements in methods of business metric preparation
-%\tb Collaborated with a multi-disciplinary team to develop logistics plans for new design incorporation
 \end{position}
 
 % Skyjack: Co-op 2
 \employer{\textbf{\href{http://www.skyjack.com}{Linamar}{\logolinamar}}}
 \location{\textbf{Guelph, ON, CAN}}
-\title{\textsl{Manufacturing Engineering - Skyjack}}
-\dates{\textsl{Jan. - Apr. 2015}}
+\title{\textsl{Manufacturing G\'enie - Skyjack}}
+\dates{\textsl{janv. - avril 2015}}
 \begin{position}
 \tb Worked with a team of engineers to troubleshoot production issues at an aerial work platform manufacturer
-%\tb Increased process efficiency by organizing assembly stations and designing of jigs/fixtures with SOLIDWORKS
 \end{position}
-
-% % Nor Arc: Co-op 1
-% \employer{\textbf{\href{http://www.norarc.com/en/}{Nor-Arc}}}
-% \location{\textbf{Earlton, ON, CAN}}
-% \title{\textsl{Junior Detailer - Steel Fabricators}}
-% \dates{\textsl{June - Aug. 2014}}
-% \begin{position}
-% \tb Detailed architectural, mechanical and electrical drawings including GD\&T in AutoCAD
-% \end{position}
 
 %---------------------------------------------------------------------------------------------------------
 
 \toprule
 
 %---------------------------------------------------------------------------------------------------------
-%	PROJECTS
+%   PROJECTS
 %---------------------------------------------------------------------------------------------------------
 \section{\headingprojects}
 % Modify layout
@@ -275,7 +223,7 @@ Honors Mechanical/Mechatronics Engineering Co-op}
 % Portfolio [SW]
 \title{\textsl{Swift App Training}}
 \employer{\textsl{Apple: Software University}}
-\dates{\textsl{Aug. 2018}}
+\dates{\textsl{août 2018}}
 \begin{position}
 \tb Reviewed the fundamentals of object oriented programming in Swift and coded basic application
 \end{position}
@@ -284,7 +232,7 @@ Honors Mechanical/Mechatronics Engineering Co-op}
 % DSA [SW]
 \title{\textsl{MIT Open Courseware Self-Study}}
 \employer{\textsl{6.006 Introduction to Algorithms}}
-\dates{\textsl{May 2018}}
+\dates{\textsl{mai 2018}}
 \begin{position}
 \tb Covered complexity, sorting algorithms, graphs, and dynamic programming in Jupyter Python notebooks
 \end{position}
@@ -292,7 +240,7 @@ Honors Mechanical/Mechatronics Engineering Co-op}
 % % NI Open [CTL]
 % \title{\textsl{Embedded Control Training}}
 % \employer{\textsl{National Instruments}}
-% \dates{\textsl{Oct. 2018}}
+% \dates{\textsl{oct. 2018}}
 % \begin{position}
 % \tb Developped NI cRIO FPGA, RTOS
 % \end{position}
@@ -300,102 +248,55 @@ Honors Mechanical/Mechatronics Engineering Co-op}
 % Ball and Beam [CTL]
 \title{\textsl{Ball \& Beam Lab}}
 \employer{\textsl{ECE481: Digital Control Systems}}
-\dates{\textsl{Aug. 2017}}
+\dates{\textsl{août 2017}}
 \begin{position}
 \tb Designed LabVIEW HMI, performed system ID, implemented/tuned digital controller on NI cRIO FPGA
 \end{position}
-
-% % Python Design Altaeros [CAE]
-% \title{\textsl{Python Design Optimization}}
-% \employer{\textsl{WKRPT 400: Co-op 5}}
-% \dates{\textsl{Apr. 2017}}
-% \begin{position}
-% \tb Developed Python script to solve material sizing algorithm, presented findings in \LaTeX report
-% \end{position}
 
 % Drumming Hack [CTL]
 \title{\textsl{Drum Rhythm Arduino Hack}}
 \employer{\textsl{Personal: WIT Hackathon}}
 \dates{\textsl{Mar. 2017}}
 \begin{position}
-\tb Coded firmware in C and communicated over UART to MATLAB for real-time monitoring of vibration
+\tb Coded embarqu\'e in C and communicated over UART to MATLAB for real-time monitoring of vibration
 \end{position}
 
 % Wind turbine [CTL]
 \title{\textsl{Wind Turbine Pitch Actuator}}
 \employer{\textsl{ME360: Control Systems}}
-\dates{\textsl{Dec. 2016}}
+\dates{\textsl{d\'ec. 2016}}
 \begin{position}
 \tb Studied time/frequency domain responses in MATLAB for closed-loop stability of PI controlled Simulink
 \end{position}
 
-% % Mining device [CTL]
-% \title{\textsl{Mining Safety Device}}
-% \employer{\textsl{ME380: Engineering Design}}
-% \dates{\textsl{Nov. 2016}}
-% \begin{position}
-% \tb Developed a 3D printed enclosure to protect internal Arduino and sensors of severe underground environment
-% %\textsl{design and test}
-% \end{position}
 
 % DC Motor [CTL]
 \title{\textsl{DC Motor Control System}}
 \employer{\textsl{ME360: Control Systems}}
-\dates{\textsl{Oct. 2016}}
+\dates{\textsl{oct. 2016}}
 \begin{position}
 \tb Designed PID control in Simulink for a DC motor; implemented in real-time with QUARC C code generation
 \end{position}
 
-% % ODI CNC bending [CTL]
-% \title{\textsl{CNC Bending Powertrain}}
-% \employer{\textsl{WKRPT300: Co-op 4}}
-% \dates{\textsl{Sept. 2016}}
-% \begin{position}
-% \tb Performed iterative testing with HMI to gather data for selection; assured compatibility into control system
-% \end{position}
 
 % Dune Buggy [HO]
 \title{\textsl{Dune-Buggy Magneto Repair}}
 \employer{\textsl{Personal}}
-\dates{\textsl{Aug. 2016}}
+\dates{\textsl{août 2016}}
 \begin{position}
 \tb Diagnosed fuel system ignition issue then replaced coil and armature of solid-state system
 \end{position}
-
-% % SOLIDWORKS Drawing package [SW]
-% \title{\textsl{SOLIDWORKS Add-In Development}}
-% \employer{\textsl{WKRPT 300: Co-op 3}}
-% \dates{\textsl{July. 2016}}
-% \begin{position}
-% \tb Accelerated assembly drawing package preparation by developing a VB add-in with the MS Visual Studio IDE
-% \end{position}
-%
-% % PWC VBA [SW]
-% \title{\textsl{VBA Software Development}}
-% \employer{\textsl{WKRPT 200: Co-op 3}}
-% \dates{\textsl{Dec. 2015}}
-% \begin{position}
-% \tb Programmed a report generating VBA project to extract and reduce SAP enterprise software data
-% \end{position}
-
-% Embedded Robot Design [SW]
-% \title{\textsl{Embedded Robot Design}}
-% \employer{\textsl{GENE121: Digital Computation}}
-% \dates{\textsl{Apr. 2014}}
-% \begin{position}
-% \tb Coded a C++ algorithm, designed and assembled a robot to perform a color sorting and movement operation
-% \end{position}
 
 %---------------------------------------------------------------------------------------------------------
 
 \toprule
 
 %---------------------------------------------------------------------------------------------------------
-%	INTERESTS
+%   INTERESTS
 %---------------------------------------------------------------------------------------------------------
 \section{\headinginterests}
-\tb Further developing skills related to firmware, electronics, machine learning and embedded systems\\
-􏰚\tb Repairing off-road vehicles, DIY electronics, hockey, golf, swimming and socializing (bilingual/French)
+\tb Further developing skills related to embarqu\'e, electronics, machine learning and embedded systems\\
+􏰚\tb R\'eparer des v\'ehicules hors-terrain, projets \'electr\^oniques, hockey, golf, natation et socialisation (bilingue)
 %---------------------------------------------------------------------------------------------------------
 
 \end{resume}
