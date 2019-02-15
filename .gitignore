@@ -20,7 +20,7 @@
 # *.pdf
 
 ## Generated if empty string is given at "Please type another file name for output:"
-.pdf
+*.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
@@ -219,7 +219,6 @@ TSWLatexianTemp*
 # expex forward references with \gathertags
 *-tags.tex
 
-*out/
-
 .DS_Store
 !Resume.pdf
+!Resume_fr.pdf
