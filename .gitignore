@@ -220,5 +220,5 @@ TSWLatexianTemp*
 *-tags.tex
 
 .DS_Store
-!Resume.pdf
-!Resume_fr.pdf
+# !Resume.pdf
+# !Resume_fr.pdf
