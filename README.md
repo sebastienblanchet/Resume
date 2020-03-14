@@ -1,5 +1,7 @@
 # LaTeX Resume
 
+[![Build Status](https://travis-ci.org/sebastienblanchet/Resume.svg?branch=master)](https://travis-ci.org/sebastienblanchet/Resume)
+
 *Author: Sebastien Blanchet*
 
 *Email: s3blanch@edu.uwaterloo.ca*
@@ -46,30 +48,23 @@ File contents of `~/Resume`:
 |
 ├── LICENSE                    # Repo license
 ├── README.md                  # Repo read me
-├──common/                     
+├── texlive_install.sh         # travis install script
+├── texlive                    # Install script depts.
+├── common/                     
 │   ├── Commands.tex           # Common commands (i.e. logos. colors, etc.)
 │   └── Header.tex             # Header contents (i.e. name, phone number, etc.)
-├──cov/
+├── cov/
 │   ├── Cover.tex              # Sample cover letter contents (lorem ipsum)
 │   └── cov.cls                # Cover letter stylesheet
-└──res/
-    ├── Resume.jpg             # Figure shown below in read me
+└── res/
+    ├── Makefile               # Helper for building locally
+    ├── Resume.png             # Figure shown below in read me
     ├── Resume.tex             # Main source
     ├── Resume_fr.tex          # French source
-    ├── res.cls                # Resume stylesheet
-    └──out/
-        ├── Resume.pdf         # PDF output of Resume.tex
-        └── Resume_fr.pdf      # PDF output of Resume_fr.tex
-
+    └── res.cls                # Resume stylesheet
 ```
 
 ## Preview
 
-![Screenshot](res/Resume.jpg)
+![Screenshot](res/Resume.png)
 
-Updated 02/14/2019.
-
-
-## License
-
-[MIT License](LICENSE)

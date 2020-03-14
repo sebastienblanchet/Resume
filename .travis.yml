@@ -10,19 +10,16 @@ script:
 - cd res
 - travis_wait 3 pdflatex -output-directory ../build Resume.tex
 - travis_wait 3 pdflatex -output-directory ../build Resume_fr.tex
+- cd ..
 
 # Deploying
-# deploy:
-#   provider: releases
-#   api_key:
-#     secure: e6+Z8M6W71Se7Lqk/tHVmtsX1SnJ0KJ43tM7l+QRL09LcaL9AHzjRdhdVJ7+BZpjgnLvl4bg02SQT3aIufxa6HF/u3/n9c4shai8O9mVQivlXUZOEcUGN1mqrJGFReGfTqvEEfNidePswv3TXL+OvyZ4oKckTmmO/VkL0PD1TUFu6K4DrhjuxoJSmbD/Auti7fJkvRZWQ9PDu7K41YgzAdmmF8tcE9Ix85bioRVG8cvl6mZiE8wrKo1Kba2gttIz8gVqAgkYKek0NCIT0w7e1m9POmoZBtDnl02jIS15KJox50DAEkqYHg8/yx3er55RLGSSlUtunrxRhaZDx9cCvefHxpEyMnpdWQqwPpg/+KVMNwierFodXzer8SY+Ntx2T2QV1kXoUMmbE/nE6+ExfLJkL0mkqoeWmtuHaplaNkqhoZ1VW32+r5Wxr/KlOJnoZt5YTUzjrxRT274MIqltntnHyRjqjrTA7Zu1v65kpYnngMg1/JvU4Hnj6HRvmyBWZzYg0riC1LGPCUvp+s7zpq36xeEKjdBnSIUo5oEqPxedOXF2f8/YjhShFSB/kcafZ00jQMbc/m2aK/ZPugWRIv5YHawK0/TNzge74FGgpXva7NUQUije88YtqpZCe0je91eWxQxpVbqAd0TUsrLKYghQy2fNjatoeNRZ+r3BnyE=
-#   file: ''
-#   on:
-#     repo: sebastienblanchet/Resume
-# file: 
-# - ./build/Resume.pdf
-# - ./build/Resume_fr.pdf
-# skip_cleanup: true
-# on:
-#   tags: true
-#   branch: master
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  file: 
+  - ./build/Resume.pdf
+  - ./build/Resume_fr.pdf
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
