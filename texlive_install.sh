@@ -31,7 +31,24 @@ tlmgr install   \
   exam          \
   amsfonts      \
   stmaryrd      \
-  amsmath
+  amsmath       \
+  xspace        \
+  fontawesome   \
+  hyperref      \
+  pdfcomment    \
+  epstopdf      \
+  acronym       \
+  geometry      \
+  graphicx      \
+  xcolor        \
+  etoolbox      \
+  xkeyval       \
+  datetime2     \
+  tracklang     \
+  zref          \
+  marginnote    \
+  soulpos       \
+  translations
 
 # Keep no backups (not required, simply makes cache bigger)
 tlmgr option -- autobackup 0

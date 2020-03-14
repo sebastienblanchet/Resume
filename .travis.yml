@@ -7,6 +7,16 @@ cache:
     - $HOME/.texlive
 script:
 - mkdir build
+- cd res
 # Prefix command with travis_wait x so it times out after 3 mins
-- travis_wait 3 pdflatex -output-directory build ./res/Resume.tex
-- travis_wait 3 pdflatex -output-directory build ./res/Resume_fr.tex
+- travis_wait 3 pdflatex -output-directory ../build Resume.tex
+- travis_wait 3 pdflatex -output-directory ../build Resume_fr.tex
+
+# add travis auth
+# file: 
+# - ./build/Resume.pdf
+# - ./build/Resume_fr.pdf
+# skip_cleanup: true
+# on:
+#   tags: true
+#   branch: master
