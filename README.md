@@ -10,8 +10,7 @@
 
 * [Setup](#setup)
 * [Files](#files)
-* [Preview](#preview)
-* [License](#license)
+* [Artifacts](#artifacts)
 
 ## Setup
 
@@ -41,13 +40,14 @@ Note same applies for French version `Resume_fr.tex`
 
 ## Files
 
-File contents of `~/Resume`:
+File contents of repository `Resume` in your current working directory `$`:
 
 ```bash
-~/Resume/
+$/Resume/
 |
 ├── LICENSE                    # Repo license
 ├── README.md                  # Repo read me
+├── .travis.yml                # travis build config
 ├── texlive_install.sh         # travis install script
 ├── texlive                    # Install script depts.
 ├── common/                     
@@ -64,7 +64,11 @@ File contents of `~/Resume`:
     └── res.cls                # Resume stylesheet
 ```
 
-## Preview
 
-![Screenshot](res/Resume.png)
+# Artifacts
 
+See [latest releases](https://github.com/sebastienblanchet/Resume/releases/latest) page for:
+* `Resume.pdf` 
+* `Resume_fr.pdf` 
+
+generated outputs from `.travis.yml`.

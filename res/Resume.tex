@@ -20,9 +20,9 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % You can have multiple style options the legal options ones are:
@@ -67,7 +67,7 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{etoolbox}
-\usepackage[tooltip]{acro}
+% \usepackage[tooltip]{acro}
 
 % Increase text height
 \textheight=720pt
@@ -94,32 +94,33 @@
 % Shared header
 \input{../common/header}
 
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \begin{resume}
 
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	SKILLS
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \npspctoprule
 \section{\headingskills}
-\tb \textbf{Programming:} Embedded C, C++, Python, MATLAB, LabVIEW\\
+\tb \textbf{Programming:} Embedded C, C++, C\#, JavaScript, Python, MATLAB, LabVIEW \\
+\tb \textbf{Frameworks:} AngularJS/Angular, Vue.js, node.js, Express, .NET/.NET Core\\
 \tb \textbf{Hardware:} MCU (ARM, Texas Instrument, Arduino, Raspberry Pi), FPGA (VHDL, Xilinx Vivado)\\
 \tb \textbf{Simulation:} LabVIEW-FPGA/RT, Simulink, OPAL-RT, Speedgoat, dSPACE, SOLIDWORKS, ANSYS\\
-\tb \textbf{OS:} Windows, macOS, Linux, RTOS (FreeRTOS, Phar Lap ETS, TI-RTOS, QNX), UNIX\\
+\tb \textbf{OS:} Windows, macOS, Linux (CentOS, RHEL), RTOS (FreeRTOS, Phar Lap ETS, TI-RTOS, QNX), UNIX\\
 \tb \textbf{Protocols:} CAN, LIN, UDS, SPI, I2C, JTAG, UART, USB, RS422, FTP\\
-\tb \textbf{Integration:} Git Bash, Atlassian (JIRA, Confluence, Stash) GitHub, Jenkins, SCons, CMock\\
-\tb \textbf{Concepts:} embedded discrete and optimal control, PID, DSP, HIL/SIL, TDD, OOP, DSA, CI, API\\
-% \tb \textbf{Libraries:} Numpy, Pytest, Tensorflow, OpenCV, OpenCL, \\
-\tb \textbf{Other:} Bash, Vim, HTML5, CSS, JSON, XML, \LaTeX, Markdown, MISRA, Assembler, Swift
+\tb \textbf{Integration:} Git Bash, Atlassian (JIRA, Confluence, Stash), Jenkins\\
+% \tb \textbf{Debug:} gdb, g++, gcc, gcov
+ \tb \textbf{Concepts:} embedded discrete and optimal control, PID, DSP, HIL/SIL, TDD, OOP, DSA, CI, API\\
+\tb \textbf{Other:} Bash, Vim, HTML5/CSS3, JSON, XML, \LaTeX, Markdown, Assembler
 
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \toprule
 
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	EDUCATION
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \section{\headingeducation}
 % Modify layout
 \begin{format}
@@ -134,14 +135,13 @@ Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
 \dates{\textsl{Sept. 2013 - Apr. 2019}}
 \begin{position}
 \end{position}
-
-%--------------------------------------------------------------------------------------------------------- 
+%-------------------------------------------------------------------------------- 
 
 \toprule
 
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	EXPERIENCE
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % \faSuitcase \faBlackTie
 \section{\headingexperience}
 % Modify layout
@@ -151,10 +151,21 @@ Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
 \body\\
 \end{format}
 
+% FTE 1
+\employer{\textbf{\href{http://www.pwc.ca}{Pratt \& Whitney Canada}{\logopwc}}}
+\location{\textbf{Montreal, QC, CAN}}
+\title{\textsl{Software Engineer - Test Facilities Computing}}
+\dates{\textsl{Aug. 2019 - Present}}
+\begin{position}
+\tb Porting various EEC monitoring legacy applications to C\# .NET core back-end web services with AngularJS front-end\\
+\tb CentOS server side database C++ SQL , networking TCP/UDP sockets \\
+\tb Low level embedded C drivers on real-time Linux for high speed data
+\end{position}
+
 % Tesla: Co-op 9
 \employer{\textbf{\href{https://www.tesla.com/}{Tesla}{\logotesla}}}
 \location{\textbf{Palo Alto, CA, USA}}
-\title{\textsl{Firmware Engineering - Energy Products}}
+\title{\textsl{Firmware Engineering (Co-op) - Energy Products}}
 \dates{\textsl{Sept. - Dec. 2018}}
 \begin{position}
 \tb Coded MISRA compliant firmware in C for power electronic controls on embedded system's DSPs and MCUs\\
@@ -174,7 +185,7 @@ Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
 % Apple: Co-op 6 - 8 
 \employer{\textbf{\href{https://www.apple.com}{Apple}{\logoapple}}}
 \location{\textbf{Cupertino, CA, USA}}
-\title{\textsl{Controls Engineering - Special Projects Group}}
+\title{\textsl{Controls Engineering (Co-op) - Special Projects Group}}
 \dates{\textsl{Aug. 2017 - Aug. 2018}}
 \begin{position}
 \tb Developed a hardware-in-the-loop system for validation of power electronic control algorithms in C\\
@@ -193,7 +204,7 @@ Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
 % Altaeros: Co-op 5
 \employer{\textbf{\href{http://www.altaeros.com}{Altaeros}{\logoaltaeros}}}
 \location{\textbf{Boston, MA, USA}}
-\title{\textsl{Systems Engineering - Research \& Development}}
+\title{\textsl{Systems Engineering (Co-op) - Research \& Development}}
 \dates{\textsl{Jan. - Apr. 2017}}
 \begin{position}
 \tb Performed numerical analysis in Python on prototype of an autonomous aerostat's electromechanical system\\
@@ -204,7 +215,7 @@ Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
 % ODI: Co-op 4
 \employer{\textbf{\href{https://www.ontariodie.com}{Ontario Die International}{\logoodi}}}
 \location{\textbf{Waterloo, ON, CAN}}
-\title{\textsl{Mechanical Design - Research \& Development}}
+\title{\textsl{Mechanical Engineering (Co-op) - Research \& Development}}
 \dates{\textsl{May - Aug. 2016}}
 \begin{position}
 \tb Designed robotic components (electrical, hydraulic) of PLC/CNC bending systems in SOLIDWORKS
@@ -216,7 +227,7 @@ Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
 % PWC: Co-op 3
 \employer{\textbf{\href{http://www.pwc.ca}{Pratt \& Whitney Canada}{\logopwc}}}
 \location{\textbf{Mississauga, ON, CAN}}
-\title{\textsl{Program Management - Turbofan Operations}}
+\title{\textsl{Project Management (Co-op) - Turbofan Operations}}
 \dates{\textsl{Sept. - Dec. 2015}}
 \begin{position}
 \tb Communicated with the OEM in French to assure delivery of a quality engine while exceeding expectations
@@ -227,7 +238,7 @@ Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
 % Skyjack: Co-op 2
 \employer{\textbf{\href{http://www.skyjack.com}{Linamar}{\logolinamar}}}
 \location{\textbf{Guelph, ON, CAN}}
-\title{\textsl{Manufacturing Engineering - Skyjack}}
+\title{\textsl{Manufacturing Engineering (Co-op) - Skyjack}}
 \dates{\textsl{Jan. - Apr. 2015}}
 \begin{position}
 \tb Worked with a team of engineers to troubleshoot production issues at an aerial work platform manufacturer
@@ -243,13 +254,13 @@ Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
 % \tb Detailed architectural, mechanical and electrical drawings including GD\&T in AutoCAD
 % \end{position}
 
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \toprule
 
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	PROJECTS
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \section{\headingprojects}
 % Modify layout
 \begin{format}
@@ -403,17 +414,17 @@ Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
 % \tb Coded a C++ algorithm, designed and assembled a robot to perform a color sorting and movement operation
 % \end{position}
 
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \toprule
 
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	INTERESTS
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \section{\headinginterests}
 % \tb Further developing skills related to firmware, electronics, machine learning and embedded systems\\
 􏰚\tb Repairing off-road vehicles, DIY electronics, hockey, golf, swimming and socializing (bilingual/French)
-%---------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \end{resume}
 \end{document}
