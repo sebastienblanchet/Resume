@@ -1,0 +1,12 @@
+sudo: required
+install:
+ - source ./texlive_install.sh
+cache:
+  directories:
+    - /tmp/texlive
+    - $HOME/.texlive
+script:
+- mkdir build
+# Prefix command with travis_wait x so it times out after 3 mins
+- travis_wait 3 pdflatex -output-directory build ./res/Resume.tex
+- travis_wait 3 pdflatex -output-directory build ./res/Resume_fr.tex
