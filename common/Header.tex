@@ -19,19 +19,23 @@
     \newcommand{\mycity}{\faMapO \xspace Montreal, QC, CAN}
 }
 
+\newcommand{\mygit}{https://github.com/sebastienblanchet}
+\newcommand{\myli}{https://www.linkedin.com/in/sebastien-blanchet/}
+\newcommand{\myport}{https://sebastienblanchet.github.io/portfolio}
+
 %% Complex name
 \iftoggle{color}{
     \name{\textcolor{\commoncol}{\myname}
-    \href{https://github.com/sebastienblanchet}{\textcolor{violet}{\faGithub}}
-    \href{https://www.linkedin.com/in/sebastien-blanchet/}{\textcolor{yaleblue}{\faLinkedinSquare}}
+    \href{\mygit}{\textcolor{violet}{\faGithub}}
+    \href{\myli}{\textcolor{yaleblue}{\faLinkedinSquare}}
     \href{https://stackoverflow.com/users/9791070/seb-blanchet}{\textcolor{princetonorange}{\faStackOverflow}}
-    \href{https://sebastienblanchet.github.io}{\textcolor{babyblue}{\faGlobe}}
+    \href{\myport}{\textcolor{babyblue}{\faGlobe}}
     }
 }{
     \name{\myname
-    \href{https://github.com/sebastienblanchet}{\faGithub}
+    \href{\mygit}{\faGithub}
     \href{https://www.linkedin.com/in/sebastien-blanchet/}{\faLinkedinSquare}
-    \href{https://sebastienblanchet.github.io}{\faGlobe}
+    \href{\myport}{\faGlobe}
     \href{https://stackoverflow.com/users/9791070/seb-blanchet}{\faStackOverflow}
     }
 }
