@@ -20,7 +20,7 @@ async function render() {
     //render ejs template to html string
     //pass pageModel in to render content
     const html = await ejs
-      .renderFile("index.ejs", { model: pageModel })
+      .renderFile("templates/index.ejs", { model: pageModel })
       .then(output => output);
 
     //create file and write html

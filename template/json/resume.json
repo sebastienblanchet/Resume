@@ -1,0 +1,314 @@
+{
+  "about": {
+    "name": "Sebastien Blanchet",
+    "location": "Montreal, QC, CAN",
+    "email": "s3blanch@edu.uwaterloo.ca",
+    "li": "https://www.linkedin.com/in/sebastien-blanchet/",
+    "git": "https://www.github.com/sebastienblanchet",
+    "stack": "https://www.stackoverflow.com/users/9791070/seb-blanchet",
+    "summary": "Software Engineer"
+  },
+  "interests": ["coffee",
+    "coding",
+    "hockey",
+    "football",
+    "golf",
+    "biking",
+    "tinkering",
+    "electronics",
+    "mechanics",
+    "gaming"
+  ],
+  "skills": {
+    "programming": [
+      "C",
+      "C++",
+      "C#",
+      "JavaScript(ES6)",
+      "TypeScript",
+      "Python",
+      "Ruby",
+      "PHP",
+      "MATLAB",
+      "HTML5",
+      "CSS3"
+    ],
+    "frameworks": [
+      "Angular",
+      "Vue.js",
+      "Node.js",
+      ".NET",
+      "Rails",
+      "Laravel"
+    ],
+    "libraries": [
+      "React",
+      "Boostrap",
+      "jQuery",
+      "MySQL",
+      "MongoDB",
+      "Express",
+      "Vuetify"
+    ],
+    "hardware": [
+      "NI",
+      "ARM",
+      "Texas Instrument",
+      "Arduino",
+      "Raspberry Pi",
+      "Xilinx",
+      "FPGA",
+      "VHDL"
+    ],
+    "simulation": [
+      "LabVIEW - FPGA / RT",
+      "Simulink",
+      "OPAL - RT",
+      "Speedgoat",
+      "dSPACE",
+      "SOLIDWORKS",
+      "ANSYS"
+    ],
+    "os": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "CentOS",
+      "RHEL",
+      "RTOS",
+      "FreeRTOS",
+      "Phar Lap ETS",
+      "TI - RTOS",
+      "QNX",
+      "UNIX"
+    ],
+    "protocols": [
+      "TCP / IP",
+      "UDP",
+      "ARINC",
+      "CAN",
+      "LIN",
+      "UDS",
+      "SPI",
+      "I2C",
+      "JTAG",
+      "UART",
+      "USB",
+      "RS422",
+      "FTP"
+    ],
+    "devops": [
+      "Git Bash",
+      "Jenkins",
+      "Travis-CI",
+      "Atlassian",
+      "Trac",
+      "Coverity",
+      "OpenShift(containerization)"
+    ],
+    "concepts": [
+      "embedded discrete and optimal control",
+      "PID",
+      "DSP",
+      "HIL / SIL",
+      "TDD",
+      "OOP",
+      "DSA",
+      "CI / CD"
+    ],
+    "other": [
+      "Git",
+      "Bash",
+      "Vim",
+      "JSON",
+      "LaTeX",
+      "Markdown",
+      "npm",
+      "Jenkins",
+      "Travis-CI"
+    ]
+  },
+  "education": [{
+    "id": "uw",
+    "url": "https://www.uwaterloo.ca",
+    "name": "University of Waterloo",
+    "degree": "Bachelor of Applied Science with Distinction",
+    "comment": "Honors Mechanical Engineering Co-op, GPA: 3.5/4.0",
+    "start": "Sept. 2013",
+    "end": "Apr. 2019"
+  }],
+  "jobs": [{
+      "id": "pwc",
+      "url": "http://www.pwc.ca",
+      "employer": "Pratt & Whitney Canada",
+      "location": "Montreal, QC, CAN",
+      "title": "Software Engineer",
+      "division": "Test Facilities Computing",
+      "start": "Aug. 2019",
+      "end": "Present",
+      "description": [
+        "Developing EEC communication software with modern web technologies (Node.js, Vue.js, HTML5/CSS3)",
+        "Contributing to multi-threaded C++/C# for CentOS/RHEL Linux server-side applications",
+        "Using internal TCP/UDP sockets programming API to communicate with MySQL/MongoDB databases",
+        "Integrating fully Agile work-flow using Git, Jenkins, various unit and e2e testing frameworks ",
+        "Designing embedded C drivers on RTOS Linux for high-speed EEC data acquisition and processing"
+      ],
+      "technologies": [
+        "C",
+        "C++",
+        "C#",
+        "Node.js",
+        "Vue.js",
+        "HTML5/CSS3",
+        "MongoDB",
+        "MySQL",
+        "Linux",
+        "Git"
+      ]
+    },
+    {
+      "id": "tesla",
+      "url": "https://www.tesla.com/",
+      "employer": "Tesla",
+      "location": "Palo Alto, CA, USA",
+      "title": "Firmware Engineering (Co-op)",
+      "division": "Energy Products",
+      "start": "Sept. 2018",
+      "end": "Dec. 2018",
+      "description": [
+        "Coded MISRA compliant firmware in C for power electronic controls on embedded system's DSPs and MCUs",
+        "Full-stack exposure: RTOS kernel, serial drivers APIs (CAN, SPI), application-level controls and diagnostics",
+        "Deployed an embedded self-test C framework on multiple ECUs eliminating manual debugging at EOL/field",
+        "Employed a test-driven development mindset by writing C unit tests, SIL/HIL simulations, Pytest regression ",
+        "Assured CI in an Agile environment with Atlassian tools, Git Bash, code review/PR and Jenkins builds",
+        "Employing SCRUM software development with Atlassian tools, Git Bash, code review",
+        "Coding layered architecture CAN, UDS, UDP communication protocols for diagnostics and data transfer between ECUs",
+        "Implementing power electronics control algorithms for industrial inverter, rectifiers"
+      ],
+      "technologies": [
+        "C",
+        "C++",
+        "Python",
+        "HIL",
+        "Git"
+      ]
+    },
+    {
+      "id": "apple",
+      "url": "https://www.apple.com",
+      "employer": "Apple",
+      "location": "Cupertino, CA, USA",
+      "title": "Controls Engineering (Co-op)",
+      "division": "Special Projects Group",
+      "start": "Aug. 2017",
+      "end": "Aug. 2018",
+      "description": [
+        "Developed a hardware-in-the-loop system for validation of power electronic control algorithms in C",
+        "Emulated and optimized high-fidelity discrete plant models on 32-bit Xilinx FPGA for low latency micro second control",
+        "Deployed LabVIEW HMI for deterministic communication between PC, PXIe RTOS controller and FPGA",
+        "Flashed microcontroller via JTAG, serial and Ethernet with the latest software builds for bring-up of PCBAs",
+        "Applied DSP theory to convert continuous Simulink filters to discrete firmware in C for data acquisition",
+        "Implemented automated testing Python frameworks for continuous integration and software regression",
+        "Designed system harness to interface HIL and PCBA from electrical schematics and NI hardware datasheets",
+        "Converted continuous time MATLAB/Simulink algorithms to discrete firmware in C FIR",
+        "Applied DSP theory with discrete filters in C for data acquisition (LPF, HPF, BSF, BPF, anti-alias)",
+        "Hardware communication protocols interfaces serial, ethernet, SPI PCIe, I2C, UART, JTAG",
+        "Acquire and generate analog and digital signals, control timing, and implement signal processing on RT and FPGA parallel processing"
+      ],
+      "technologies": [
+        "C",
+        "C++",
+        "LabVIEW",
+        "MATLAB",
+        "Simulink",
+        "Python",
+        "Git"
+      ]
+    },
+    {
+      "id": "altaeros",
+      "url": "http://www.altaeros.com",
+      "employer": "Altaeros",
+      "location": "Boston, MA, USA",
+      "title": "Systems Engineering (Co-op)",
+      "division": "R & D",
+      "start": "Jan. 2017",
+      "end": "Apr. 2017",
+      "description": [
+        "Performed numerical analysis in Python on prototype of an autonomous aerostat's electromechanical system",
+        "Utilized electronic lab equipment and LabVIEW HMI to log test data and analyze with MATLAB",
+        "Coordinated with vendors and ControlEng SERVOsoft to size all control system components (servos, VFDs)"
+      ],
+      "technologies": [
+        "Python",
+        "MATLAB",
+        "LabVIEW"
+      ]
+    },
+    {
+      "id": "odi",
+      "url": "https://www.ontariodie.com",
+      "employer": "Ontario Die International",
+      "location": "Waterloo, ON, CAN",
+      "title": "Mechanical Engineering (Co-op)",
+      "division": "R & D",
+      "start": "May 2016",
+      "end": "Aug. 2016",
+      "description": [
+        "Designed robotic components (electrical, hydraulic) of PLC/CNC bending systems in SOLIDWORKS",
+        "Improved existing technology by applying lean, DFM and DFA principles to prototyping and research projects",
+        "Automated tedious SOLIDWORKS tasks in VBA and C++ with the API in MS Visual Studio IDE",
+        "Performed hands-on Q&A HMI testing, machined components, fabricated assemblies with power/hand tools"
+      ],
+      "technologies": [
+        "SOLIDWORKS",
+        "C++"
+      ]
+    },
+    {
+      "id": "pwc",
+      "url": "http://www.pwc.ca",
+      "employer": "Pratt & Whitney Canada",
+      "location": "Mississauga, ON, CAN",
+      "title": "Project Management (Co-op)",
+      "division": "Turbofan Operations",
+      "start": "Sept. 2015",
+      "end": "Dec. 2015",
+      "description": [
+        "Communicated with the OEM in French to assure delivery of a quality engine while exceeding expectations",
+        "Developed Excel VBA programs allowing for improvements in methods of business metric preparation",
+        "Collaborated with a multi-disciplinary team to develop logistics plans for new design incorporation"
+      ],
+      "technologies": []
+    },
+    {
+      "id": "linamar",
+      "url": "http://www.skyjack.com",
+      "employer": "Linamar",
+      "location": "Guelph, ON, CAN",
+      "title": "Manufacturing Engineering (Co-op)",
+      "division": "Skyjack",
+      "start": "Jan. 2015",
+      "end": "Apr. 2015",
+      "description": [
+        "Worked with a team of engineers to troubleshoot production issues at an aerial work platform manufacturer",
+        "Increased process efficiency by organizing assembly stations and designing of jigs/fixtures with SOLIDWORKS"
+      ],
+      "technologies": []
+    },
+    {
+      "id": "norarc",
+      "url": "http://www.norarc.com/en/",
+      "employer": "Nor-Arc",
+      "location": "Earlton, ON, CAN",
+      "title": "Junior Detailer (Co-op)",
+      "division": "Steel Fabricators",
+      "start": "June 2014",
+      "end": "Aug. 2014",
+      "description": [
+        "Detailed architectural, mechanical and electrical drawings including GD&T in AutoCAD"
+      ],
+      "technologies": []
+    }
+  ]
+}
