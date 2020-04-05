@@ -1,6 +1,9 @@
 # LaTeX Resume
 
-[![Build Status](https://travis-ci.org/sebastienblanchet/Resume.svg?branch=master)](https://travis-ci.org/sebastienblanchet/Resume)
+<p align="start">
+  <a href="https://travis-ci.org/sebastienblanchet/Resume"><img src="https://travis-ci.org/sebastienblanchet/Resume.svg?branch=master" alt="Build Status"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+</p>
 
 *Author: Sebastien Blanchet*
 
@@ -8,9 +11,11 @@
 
 ## Contents
 
-* [Setup](#setup)
-* [Files](#files)
-* [Artifacts](#artifacts)
+- [LaTeX Resume](#latex-resume)
+  - [Contents](#contents)
+  - [Setup](#setup)
+  - [Files](#files)
+  - [Artifacts](#artifacts)
 
 ## Setup
 
@@ -50,7 +55,7 @@ $/Resume/
 ├── .travis.yml                # travis build config
 ├── texlive_install.sh         # travis install script
 ├── texlive                    # Install script depts.
-├── common/                     
+├── common/
 │   ├── Commands.tex           # Common commands (i.e. logos. colors, etc.)
 │   └── Header.tex             # Header contents (i.e. name, phone number, etc.)
 ├── cov/
@@ -64,11 +69,10 @@ $/Resume/
     └── res.cls                # Resume stylesheet
 ```
 
+## Artifacts
 
-# Artifacts
-
-See [latest releases](https://github.com/sebastienblanchet/Resume/releases/latest) page for:
-* `Resume.pdf` 
-* `Resume_fr.pdf` 
+See [latest releases](https://github.com/sebastienblanchet/Resume/releases/latest/) page for:
+* `Resume.pdf`
+* `Resume_fr.pdf`
 
 generated outputs from `.travis.yml`.
