@@ -219,7 +219,24 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
-
 .DS_Store
-# !Resume.pdf
-# !Resume_fr.pdf
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
