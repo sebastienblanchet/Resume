@@ -3,31 +3,38 @@ import util = require("util");
 import fs = require("fs");
 import ejs = require("ejs");
 
-//promisify
+import {skills, jobs, interests} from "./json/resume.json";
+
+// promisify
 const mkdir = util.promisify(fs.mkdir);
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
-const pageModel = {
-  content: "This is some sample content. Located on the sample page."
+const resume = {
+  skills: skills,
+  interests: interests,
+  jobs: jobs
 };
 
-async function render() {
+async function render(name: String, ext: String, obj: Object) {
   try {
     //create output directory
     await mkdir("dist", { recursive: true });
 
-    //render ejs template to html string
-    //pass pageModel in to render content
-    const html = await ejs
-      .renderFile("templates/index.ejs", { model: pageModel })
+    // render ejs template to file
+    const p = `templates/${name}.ejs`;
+    const file = await ejs
+      .renderFile(p, obj)
       .then(output => output);
 
-    //create file and write html
-    await writeFile("dist/index.html", html, "utf8");
+    //create file and write rendered content
+    const out = `dist/${name}.${ext}`
+    await writeFile(out, file, "utf8");
 
   } catch (error) {
     console.log(error);
   }
 }
-render();
+
+// render("index", "html", { model: pageModel });
+render("resume", "tex", resume);
