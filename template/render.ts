@@ -3,7 +3,8 @@ import util = require("util");
 import fs = require("fs");
 import ejs = require("ejs");
 
-import {skills, jobs, interests} from "./json/resume.json";
+import {skills, jobs, interests, education} from "./json/resume.json";
+import {projects} from "./json/projects.json";
 
 // promisify
 const mkdir = util.promisify(fs.mkdir);
@@ -13,6 +14,8 @@ const writeFile = util.promisify(fs.writeFile);
 const resume = {
   skills: skills,
   interests: interests,
+  education: education,
+  projects: projects,
   jobs: jobs
 };
 
@@ -24,7 +27,7 @@ async function render(name: String, ext: String, obj: Object) {
     // render ejs template to file
     const p = `templates/${name}.ejs`;
     const file = await ejs
-      .renderFile(p, obj)
+      .renderFile(p, obj, { delimiter: '$' })
       .then(output => output);
 
     //create file and write rendered content
@@ -36,5 +39,4 @@ async function render(name: String, ext: String, obj: Object) {
   }
 }
 
-// render("index", "html", { model: pageModel });
 render("resume", "tex", resume);

@@ -1,0 +1,303 @@
+{"projects": [{
+    "title": "Portfolio Web Application",
+    "img": "logo",
+    "code": "https://github.com/sebastienblanchet/portfolio/",
+    "download": "",
+    "related": "Personal",
+    "date": "Ongoing",
+    "description": [
+      "Showcasing portfolio using full-stack development/DevOps skills on GitHub-pages hosted application"
+    ]
+  },
+  {
+    "title": "Learning Ruby on Rails",
+    "img": "li",
+    "url": "https://www.linkedin.com/learning/ruby-on-rails-6-essential-training",
+    "code": "https://github.com/sebastienblanchet/rails-linkedin-learning/",
+    "related": "LinkedIn Learning",
+    "date": "Ongoing",
+    "description": [
+      "Learning Ruby on Rails"
+    ]
+  },
+  {
+    "title": "Learning GraphQL",
+    "img": "li",
+    "url": "https://www.linkedin.com/learning/graph-ql-essential-training",
+    "code": "https://github.com/sebastienblanchet/graphql-linkedin-learning/",
+    "related": "LinkedIn Learning",
+    "date": "Ongoing",
+    "description": [
+      "Learning GraphQL"
+    ]
+  },
+  {
+    "title": "Learning Vue.js",
+    "img": "li",
+    "url": "https://www.linkedin.com/learning/vue-essential-training-2",
+    "code": "https://github.com/sebastienblanchet/vue-linkedin-learning/",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/vue-linkedin-learning/master/Certificate.pdf",
+    "related": "LinkedIn Learning",
+    "date": "Mar. 2020",
+    "description": [
+      "Learning vue"
+    ]
+  },
+  {
+    "title": "Learning React",
+    "img": "li",
+    "url": "https://www.linkedin.com/learning/react-js-essential-training-3/",
+    "code": "https://github.com/sebastienblanchet/react-linkedin-learning/",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/react-linkedin-learning/master/Certificate.pdf",
+    "related": "LinkedIn Learning",
+    "date": "Mar. 2020",
+    "description": [
+      "Learning react"
+    ]
+  },
+  {
+    "title": "Learning Node.js",
+    "img": "li",
+    "url": "https://www.linkedin.com/learning/learning-node-js-2/",
+    "code": "https://github.com/sebastienblanchet/node-linkedin-learning/",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/node-linkedin-learning/master/Certificate.pdf",
+    "related": "LinkedIn Learning",
+    "date": "Mar. 2020",
+    "description": [
+      "Learning node"
+    ]
+  },
+  {
+    "title": "Learning Typescript",
+    "img": "li",
+    "url": "https://www.linkedin.com/learning/typescript-essential-training",
+    "code": "https://github.com/sebastienblanchet/typescript-linkedin-learning/",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/typescript-linkedin-learning/master/Certificate.pdf",
+    "related": "LinkedIn Learning",
+    "date": "Mar. 2020",
+    "description": [
+      "Learning typescript"
+    ]
+  },
+  {
+    "title": "Learning JavaScript",
+    "img": "li",
+    "url": "https://www.linkedin.com/learning/javascript-essential-training-3/",
+    "code": "https://github.com/sebastienblanchet/js-linkedin-learning/",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/js-linkedin-learning/master/Certificate.pdf",
+    "related": "LinkedIn Learning",
+    "date": "Mar. 2020",
+    "description": [
+      "Learning js"
+    ]
+  },
+  {
+    "title": "Learning MySQL",
+    "img": "li",
+    "url": "https://www.linkedin.com/learning/mysql-essential-training-2",
+    "code": "https://github.com/sebastienblanchet/mysql-linkedin-learning/",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/mysql-linkedin-learning/master/Certificate.pdf",
+    "related": "LinkedIn Learning",
+    "date": "Mar. 2020",
+    "description": [
+      "Learning MySQL"
+    ]
+  },
+  {
+    "title": "Learning C#",
+    "img": "li",
+    "url": "https://www.linkedin.com/learning/learning-c-sharp-3/",
+    "related": "LinkedIn Learning",
+    "date": "Mar. 2020",
+    "description": [
+      "Learning C#"
+    ]
+  },
+  {
+    "title": "Robot Arm Controller",
+    "img": "uw",
+    "url": "",
+    "download": "",
+    "related": "ECE 488: Multi-Variable Controls",
+    "date": "Apr. 2019",
+    "description": [
+      "Modeled and controlled MIMO non-linear system in MATLAB using optimal LGC control methods"
+    ]
+  },
+  {
+    "title": "Heated Press System",
+    "img": "uw",
+    "url": "",
+    "download": "",
+    "related": "ME 482: Capstone Design Project",
+    "date": "Mar. 2019",
+    "description": [
+      "Led electrical system efforts including harnessing/debugging and temperature/motor controls in C on MCU"
+    ]
+  },
+  {
+    "title": "Swift App Training",
+    "img": "apple",
+    "url": "",
+    "download": "",
+    "related": "Apple: Software University",
+    "date": "Aug. 2018",
+    "description": [
+      "Reviewed the fundamentals of object oriented programming in Swift and coded an application"
+    ]
+  },
+  {
+    "title": "MIT Open Courseware Self-Study",
+    "img": "mit",
+    "url": "",
+    "download": "",
+    "related": "Introduction to Algorithms",
+    "date": "May 2018",
+    "description": [
+      "Covered complexity, sorting algorithms, graphs, and dynamic programming in Jupyter Python notebooks"
+    ]
+  },
+  {
+    "title": "Embedded Control Training",
+    "img": "apple",
+    "url": "",
+    "download": "",
+    "related": "National Instruments",
+    "date": "Oct. 2018",
+    "description": [
+      "Developped NI cRIO FPGA, RTOS"
+    ]
+  },
+  {
+    "title": "Dune-Buggy Magneto Repair",
+    "img": "uw",
+    "url": "",
+    "download": "",
+    "related": "Personal",
+    "date": "Aug. 2018",
+    "description": [
+      "Diagnosed fuel system ignition issue then replaced coil and armature of solid-state system"
+    ]
+  },
+  {
+    "title": "Ball & Beam Lab",
+    "img": "uw",
+    "url": "",
+    "download": "",
+    "related": "ECE481: Digital Control Systems",
+    "date": "Aug. 2017",
+    "description": [
+      "Designed LabVIEW HMI, performed system ID, implemented/tuned digital controller on NI cRIO FPGA"
+    ]
+  },
+  {
+    "title": "Python Design Optimization",
+    "img": "altaeros",
+    "url": "",
+    "download": "",
+    "related": "WKRPT 400: Co-op 5",
+    "date": "Apr. 2017",
+    "description": [
+      "Developed Python script to solve material sizing algorithm, presented findings in LaTeX report"
+    ]
+  },
+  {
+    "title": "Drum Rhythm Arduino Hack",
+    "img": "wit",
+    "url": "",
+    "download": "",
+    "related": "Personal: WIT Hackathon",
+    "date": "Mar. 2017",
+    "description": [
+      "Coded firmware in C and communicated over UART to MATLAB for real-time monitoring of vibration"
+    ]
+  },
+  {
+    "title": "Wind Turbine Pitch Actuator",
+    "img": "uw",
+    "url": "",
+    "download": "",
+    "related": "ME360: Control Systems",
+    "date": "Dec. 2016",
+    "description": [
+      "Studied time/frequency domain responses in MATLAB for closed-loop stability of PI controlled Simulink"
+    ]
+  },
+  {
+    "title": "Mining Safety Device",
+    "img": "uw",
+    "url": "",
+    "download": "",
+    "related": "ME380: Engineering Design",
+    "date": "Nov. 2016",
+    "description": [
+      "Developed a 3D printed enclosure to protect internal Arduino and sensors of severe underground environment"
+    ]
+  },
+  {
+    "title": "DC Motor Control System",
+    "img": "uw",
+    "url": "",
+    "download": "",
+    "related": "ME360: Control Systems",
+    "date": "Oct. 2016",
+    "description": [
+      "Designed PID control in Simulink for a DC motor; implemented in real-time with QUARC C code generation"
+    ]
+  },
+  {
+    "title": "CNC Bending Powertrain",
+    "img": "odi",
+    "url": "",
+    "download": "",
+    "related": "",
+    "date": "Sept. 2016",
+    "description": [
+      "Performed iterative testing with HMI to gather data for selection; assured compatibility into control system"
+    ]
+  },
+  {
+    "title": "SOLIDWORKS Add-In Development",
+    "img": "odi",
+    "url": "",
+    "download": "",
+    "related": "WKRPT 300: Co-op 3",
+    "date": "July. 2016",
+    "description": [
+      "Accelerated assembly drawing package preparation by developing a VB add-in with the MS Visual Studio IDE"
+    ]
+  },
+  {
+    "title": "VBA Software Development",
+    "img": "pwc",
+    "url": "",
+    "download": "",
+    "related": "WKRPT 200: Co-op 3",
+    "date": "Dec. 2015",
+    "description": [
+      "Programmed a report generating VBA project to extract and reduce SAP enterprise software data"
+    ]
+  },
+  {
+    "title": "Twin Spool Turbofan Hands-on Familiarisation",
+    "img": "pwc",
+    "url": "",
+    "download": "",
+    "related": "WKRPT 200: Co-op 3",
+    "date": "Dec. 2015",
+    "description": [
+      "Fabricated a complete turbofan engine assembly upon participation in a theoretical gas turbine course"
+    ]
+  },
+  {
+    "title": "Embedded Robot Design",
+    "img": "uw",
+    "url": "",
+    "download": "",
+    "related": "GENE121: Digital Computation",
+    "date": "Apr. 2014",
+    "description": [
+      "Coded a C++ algorithm, designed and assembled a robot to perform a color sorting and movement operation"
+    ]
+  }
+]}
