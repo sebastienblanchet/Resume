@@ -93,47 +93,46 @@ top=0.5in
 
 % Shared header
 \input{../common/header}
-
 %-------------------------------------------------------------------------------
 
 
 \begin{resume}
+\npspctoprule
 
+<$# TODOS
+deal with capitalzie and  \\
+$>
 %-------------------------------------------------------------------------------
 % SKILLS
 %-------------------------------------------------------------------------------
-\npspctoprule
 \section{\headingskills}
-<%# TODO deal with capitalzie and  \\%>
-<% for (var skill of Object.keys(skills)) { %> \tb \textbf{<%- skill %> :} <%- skills[skill].join(", "); %> \\
-<% }%>
+<$ for (var skill of Object.keys(skills)) { $>\tb \textbf{<$- skill $> :} <$- skills[skill].join(", "); $> \\
+<$ }$>
 %-------------------------------------------------------------------------------
 
 
 \toprule
-
 %-------------------------------------------------------------------------------
 % EDUCATION
 %-------------------------------------------------------------------------------
 \section{\headingeducation}
-% Modify layout
 \begin{format}
 \employer{l}\location{r}\\
 \title{l}\dates{r}\\
 \end{format}
 
-\employer{\textbf{\href{https://uwaterloo.ca}{University of Waterloo}{\logouw}}}
-\location{\textbf{Waterloo, ON, CAN}}
-\title{Bachelor of Applied Science with Distinction\\
-Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
-\dates{\textsl{Sept. 2013 - Apr. 2019}}
-\begin{position}
-\end{position}
+<$ var i = 0; for (var edu of education) { $>% ED <$- i++ $>
+\employer{\textbf{\href{<$- edu.url $>}{<$- edu.name $>}{\logo<$- edu.id $>}}}
+\location{\textbf{<$- edu.location $>}}
+\title{\textsl{<$- edu.degree $>\\
+<$- edu.comment $> }
+\dates{\textsl{<$- edu.start $> - <$- edu.end $>}}
+
+<$ }$>
 %--------------------------------------------------------------------------------
 
 
 \toprule
-
 %-------------------------------------------------------------------------------
 % EXPERIENCE
 %-------------------------------------------------------------------------------
@@ -146,40 +145,38 @@ Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
 \body\\
 \end{format}
 
-<% var i = 0; for (var job of jobs) { %>% FTE <%- i++ %>
-\employer{\textbf{\href{<%- job.url %>}{<%- job.employer %>}{\logo<%- job.id %>}}}
-\location{\textbf{<%- job.location %>}}
-\title{\textsl{<%- job.position %> - <%- job.division %>}}
-\dates{\textsl{<%- job.start %> - <%- job.end %>}}
+<$ var i = 0; for (var job of jobs) { $>% FTE <$- i++ $>
+\employer{\textbf{\href{<$- job.url $>}{<$- job.employer $>}{\logo<$- job.id $>}}}
+\location{\textbf{<$- job.location $>}}
+\title{\textsl{<$- job.title $> - <$- job.division $>}}
+\dates{\textsl{<$- job.start $> - <$- job.end $>}}
 \begin{position}
-<% job.description.forEach(function(desc){ %>\tb <%- desc %>\\
-<% }); %>
-\end{position}
-<% }%>
+<$ job.description.forEach(function(desc){ $>\tb <$- desc $>\\
+<$ }); $>\end{position}
 
+<$ }$>
 %-------------------------------------------------------------------------------
 
+
 \toprule
-
-
 %-------------------------------------------------------------------------------
 % PROJECTS
 %-------------------------------------------------------------------------------
 \section{\headingprojects}
-% Modify layout
 \begin{format}
 \title{l}\employer{l}\dates{r}\\
 \body\\
 \end{format}
 
-% Project 1
-\title{\textsl{Portfolio Web Application}}
-\employer{\textsl{Personal}}
-\dates{\textsl{Ongoing}}
+<$ var i = 0; for (var proj of projects) { $>% PROJ <$- i++ $>
+\title{\textsl{<$- proj.title $>}}
+\employer{\textbf{\href{<$- proj.url $>}{<$- proj.related $>}}}
+\dates{\textsl{<$- proj.date $>}}
 \begin{position}
-\tb Live showcase of personal projects with Vue.js application deployed with Travis-CI to GitHub-pages
-\end{position}
+<$ proj.description.forEach(function(desc){ $>\tb <$- desc $>\\
+<$ }); $>\end{position}
 
+<$ }$>
 %-------------------------------------------------------------------------------
 
 
@@ -188,8 +185,9 @@ Honors Mechanical Engineering Co-op, \textsl{GPA: 3.5/4.0}}
 % INTERESTS
 %-------------------------------------------------------------------------------
 \section{\headinginterests}
-\tb <%- interests.join(", "); %>
+\tb <$- interests.join(", "); $>
 %-------------------------------------------------------------------------------
+
 
 \end{resume}
 \end{document}

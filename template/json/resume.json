@@ -8,7 +8,8 @@
     "stack": "https://www.stackoverflow.com/users/9791070/seb-blanchet",
     "summary": "Software Engineer"
   },
-  "interests": ["coffee",
+  "interests": [
+    "coffee",
     "coding",
     "hockey",
     "football",
@@ -28,7 +29,6 @@
       "TypeScript",
       "Python",
       "Ruby",
-      "PHP",
       "MATLAB",
       "HTML5",
       "CSS3"
@@ -38,8 +38,7 @@
       "Vue.js",
       "Node.js",
       ".NET",
-      "Rails",
-      "Laravel"
+      "Rails"
     ],
     "libraries": [
       "React",
@@ -104,7 +103,7 @@
       "Atlassian",
       "Trac",
       "Coverity",
-      "OpenShift(containerization)"
+      "OpenShift"
     ],
     "concepts": [
       "embedded discrete and optimal control",
@@ -132,12 +131,14 @@
     "id": "uw",
     "url": "https://www.uwaterloo.ca",
     "name": "University of Waterloo",
+    "location": "Waterloo, ON, CAN",
     "degree": "Bachelor of Applied Science with Distinction",
     "comment": "Honors Mechanical Engineering Co-op, GPA: 3.5/4.0",
     "start": "Sept. 2013",
     "end": "Apr. 2019"
   }],
-  "jobs": [{
+  "jobs": [
+    {
       "id": "pwc",
       "url": "http://www.pwc.ca",
       "employer": "Pratt & Whitney Canada",
