@@ -1,0 +1,8 @@
+{
+  "latex-workshop.latex.autoBuild.run": "never",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": false,
+  // "beautify.ignore": [
+  //   "*.ejs"
+]
+}
