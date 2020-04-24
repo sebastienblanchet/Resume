@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www. LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Sebastien Blanchet s3blanch@edu.uwaterloo
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+% centered: the name and address are centered at the top of the page
+% (default)
+%
+% line: the name is the left with a horizontal line then the address to
+% the right
+%
+% overlapped: the section titles overlap the body text (default)
+%
+% margin: the section titles are to the left of the body text
+%
+% 11pt: use 11 point fonts instead of 10 point fonts
+%
+% 12pt: use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[mm]{res}
+
+% Default font is the helvetica postscript font
+%\usepackage{helvet}
+\usepackage{xspace}
+\usepackage{fontawesome}
+\usepackage[hidelinks]{hyperref}
+\usepackage{pdfcomment}
+\usepackage{epstopdf}
+% fix Package inputenc Error: Invalid UTF-8 byte 147
+\UseRawInputEncoding
+%\usepackage{acronym}
+\hypersetup{
+colorlinks=false,
+}
+\usepackage{geometry}
+\geometry{
+letterpaper,
+left=0.5in,
+top=0.5in
+}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+% \usepackage[tooltip]{acro}
+
+% Increase text height
+\textheight=720pt
+\textwidth=446pt
+
+% Spacing in between jobs and projects
+\parskip=6pt
+
+%toggle
+\newtoggle{color}
+\toggletrue{color}
+% \togglefalse{color}
+
+% Handle french case
+\newtoggle{fr}
+%\toggletrue{fr}
+\togglefalse{fr}
+
+% Shared custom commands
+\input{../common/commands}
+
+\begin{document}
+
+% Shared header
+\input{../common/header}
+%-------------------------------------------------------------------------------
+
+
+\begin{resume}
+\npspctoprule
+
+<$# TODOS
+deal with capitalzie and  \\
+$>
+%-------------------------------------------------------------------------------
+% SKILLS
+%-------------------------------------------------------------------------------
+\section{\headingskills}
+<$ for (var skill of Object.keys(skills)) { $>\tb \textbf{<$- skill $> :} <$- skills[skill].join(", "); $> \\
+<$ }$>
+%-------------------------------------------------------------------------------
+
+
+\toprule
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\section{\headingeducation}
+\begin{format}
+\employer{l}\location{r}\\
+\title{l}\dates{r}\\
+\end{format}
+
+<$ var i = 0; for (var edu of education) { $>% ED <$- i++ $>
+\employer{\textbf{\href{<$- edu.url $>}{<$- edu.name $>}{\logo<$- edu.id $>}}}
+\location{\textbf{<$- edu.location $>}}
+\title{\textsl{<$- edu.degree $>\\
+<$- edu.comment $> }
+\dates{\textsl{<$- edu.start $> - <$- edu.end $>}}
+
+<$ }$>
+%--------------------------------------------------------------------------------
+
+
+\toprule
+%-------------------------------------------------------------------------------
+% EXPERIENCE
+%-------------------------------------------------------------------------------
+% \faSuitcase \faBlackTie
+\section{\headingexperience}
+% Modify layout
+\begin{format}
+\employer{l}\location{r}\\
+\title{l}\dates{r}\\
+\body\\
+\end{format}
+
+<$ var i = 0; for (var job of jobs) { $>% FTE <$- i++ $>
+\employer{\textbf{\href{<$- job.url $>}{<$- job.employer $>}{\logo<$- job.id $>}}}
+\location{\textbf{<$- job.location $>}}
+\title{\textsl{<$- job.title $> - <$- job.division $>}}
+\dates{\textsl{<$- job.start $> - <$- job.end $>}}
+\begin{position}
+<$ job.description.forEach(function(desc){ $>\tb <$- desc $>\\
+<$ }); $>\end{position}
+
+<$ }$>
+%-------------------------------------------------------------------------------
+
+
+\toprule
+%-------------------------------------------------------------------------------
+% PROJECTS
+%-------------------------------------------------------------------------------
+\section{\headingprojects}
+\begin{format}
+\title{l}\employer{l}\dates{r}\\
+\body\\
+\end{format}
+
+<$ var i = 0; for (var proj of projects) { $>% PROJ <$- i++ $>
+\title{\textsl{<$- proj.title $>}}
+\employer{\textbf{\href{<$- proj.url $>}{<$- proj.related $>}}}
+\dates{\textsl{<$- proj.date $>}}
+\begin{position}
+<$ proj.description.forEach(function(desc){ $>\tb <$- desc $>\\
+<$ }); $>\end{position}
+
+<$ }$>
+%-------------------------------------------------------------------------------
+
+
+\toprule
+%-------------------------------------------------------------------------------
+% INTERESTS
+%-------------------------------------------------------------------------------
+\section{\headinginterests}
+\tb <$- interests.join(", "); $>
+%-------------------------------------------------------------------------------
+
+
+\end{resume}
+\end{document}
