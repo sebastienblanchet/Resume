@@ -223,3 +223,6 @@ TSWLatexianTemp*
 .DS_Store
 # !Resume.pdf
 # !Resume_fr.pdf
+
+# cover letter specific files
+cov/contents.tex
