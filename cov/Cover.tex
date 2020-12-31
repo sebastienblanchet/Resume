@@ -43,39 +43,57 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[]{cov}
+\documentclass[11]{cov}
+% \documentclass[mm]{res}
 
 % Default font is the helvetica postscript font
 %\usepackage{helvet}
 \usepackage{xspace}
 \usepackage{fontawesome}
 \usepackage[hidelinks]{hyperref}
+\usepackage{pdfcomment}
+\usepackage{epstopdf}
+\usepackage{lipsum}
+% fix Package inputenc Error: Invalid UTF-8 byte 147
+\UseRawInputEncoding
+%\usepackage{acronym}
 \hypersetup{
   colorlinks=false,
 }
-\usepackage{pdfcomment}
-\UseRawInputEncoding
-\usepackage{lipsum}
-\usepackage[useregional]{datetime2}
 \usepackage{geometry}
 \geometry{
   letterpaper,
   left=0.5in,
   top=0.5in
 }
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+\usepackage{scrextend}
+% \usepackage[tooltip]{acro}
 
 % Increase text height
 \textheight=720pt
-\textwidth=500pt
+\textwidth=504pt
 
 % Spacing in between jobs and projects
 \parskip=6pt
 
-% Custom commands
+%toggle
+\newtoggle{color}
+\toggletrue{color}
+% \togglefalse{color}
+
+% Handle french case
+\newtoggle{fr}
+%\toggletrue{fr}
+\togglefalse{fr}
+
+\AtBeginEnvironment{quote}{\singlespace\vspace{-\topsep}\small}
+\AtEndEnvironment{quote}{\vspace{-\topsep}\endsinglespace}
+
+% Shared custom commands
 \input{../common/commands}
-
-
-\newcommand{\Company}{X}
 
 \begin{document}
 
@@ -83,21 +101,48 @@
 
 \begin{resume}
 \npspctoprule
-\\
 \today \\
-
-\Company,\\
-Address \\
+Company Name,\\
+Address, \\
 \\
-Dear, \\
+Dear Sir/Madam,\\
+\\
+% intro
+Intro text \\
+% points
+\begin{addmargin}[2em]{2em}
 
-\lipsum
+\\ \textbf{1. Point:} \\
+Point text : \\
+\begin{quote}
+\begin{flushright}
+\textsl{``a quite long quote spaning'' - name\\}
+\end{flushright}
+\end{quote}
+Some more text \\
 
+\\ \textbf{2. Point:} \\
+Point text : \\
+\begin{quote}
+\textsl{``a quite long quote spaning'' - name\\}
+\end{quote}
+Some more text \\
 
+\\ \textbf{3. Point:} \\
+Point one text : \\
+\begin{quote}
+\textsl{``a quite long quote spaning'' - name\\}
+\end{quote}
+Some more text \\
+
+\end{addmargin}
+
+% conc
+Conclusion text\\
+\\
 Best Regards\\
 \\
 Sebastien Blanchet
-
 \end{resume}
 
-\end{document} 
+\end{document}
