@@ -445,7 +445,7 @@
 % 2) the section heading is entirely in the left margin (possibly taking
 % multiple lines) with the body of the text next to it
 \let\@@section\relax
-\def\ds@overlapped{\ifx\@@section\relax\newsectionwidth{0.5in}\let
+\def\ds@overlapped{\ifx\@@section\relax\newsectionwidth{0in}\let
   \@@section\unboxed@sectiontitle\fi}
 \def\ds@margin{\ifx\@@section\relax\newsectionwidth{1.3in}\let
   \@@section\boxed@sectiontitle\fi}

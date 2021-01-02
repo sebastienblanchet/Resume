@@ -2,7 +2,11 @@
   "latex-workshop.latex.autoBuild.run": "never",
   "editor.tabSize": 2,
   "editor.formatOnSave": false,
+  "files.exclude": {
+    "**/*.aux": true,
+    "**/*.fdb_latexmk": true,
+    "**/*.upa": true
+  },
   // "beautify.ignore": [
   //   "*.ejs"
-]
 }
